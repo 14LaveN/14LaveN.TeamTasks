@@ -1,0 +1,24 @@
+﻿services:
+  teamtasks:
+    image: teamtasks
+    build:
+      context: .
+      dockerfile: TeamTasks/Dockerfile
+
+  teamtasks.web:
+    image: teamtasks.web
+    build:
+      context: .
+      dockerfile: TeamTasks.Web/Dockerfile
+
+  teamtasks.tasks.api:
+    image: teamtasks.tasks.api
+    build:
+      context: .
+      dockerfile: TeamTasks.Tasks.Api/Dockerfile
+
+  teamtasks.identity.api:
+    image: teamtasks.identity.api
+    build:
+      context: .
+      dockerfile: TeamTasks.Identity.Api/Dockerfile

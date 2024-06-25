@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ha+RkpKIda65MZRvS/sarpt4peGsQyUxKQ6PL/Tpzmw=",
+  "Source": "TeamTasks.Identity.Api",
+  "BasePath": "_content/TeamTasks.Identity.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

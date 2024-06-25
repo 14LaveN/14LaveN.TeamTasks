@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+BhugpsJbjXhXIKBshnBSjmOnI2W0FbLcGn8VLOByWDahQzdEeJ+e0hXTJsBRk4ZYs5AUZqy9lJdGyR4+2CAww==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

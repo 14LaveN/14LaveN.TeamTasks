@@ -1,0 +1,11 @@
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\bin\Debug\net8.0\TeamTasks.Tasks.Application.deps.json
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\bin\Debug\net8.0\TeamTasks.Tasks.Application.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\bin\Debug\net8.0\TeamTasks.Tasks.Application.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\refint\TeamTasks.Tasks.Application.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\TeamTasks.Tasks.Application.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Application\obj\Debug\net8.0\ref\TeamTasks.Tasks.Application.dll

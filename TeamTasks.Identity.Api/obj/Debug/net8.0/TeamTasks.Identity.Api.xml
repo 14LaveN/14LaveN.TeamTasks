@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TeamTasks.Identity.Api</name>
+    </assembly>
+    <members>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiAuthorization.AddAuthorizationExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiConsul.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <param name="environment">The environemnt.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiEndpoints.AddEndpoints(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="assembly">The assembly.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiLogging.AddLoggingExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiMetrics.AddMetricsOpenTelemetry(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Logging.ILoggingBuilder)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="loggingBuilder">The logging builder.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiSwagger.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="T:TeamTasks.Identity.Api.Common.VaultService">
+            <summary>
+            Represents the vault service class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.VaultService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of <see cref="T:TeamTasks.Identity.Api.Common.VaultService"/>.
+            </summary>
+            <param name="configuration">The vault configuration.</param>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.Common.VaultService.GetSecretAsync(System.String)">
+            <summary>
+            Get vault secret with specified secret path.
+            </summary>
+            <param name="secretPath">The secret path.</param>
+            <returns>Returns the secret value.</returns>
+            <exception cref="T:System.Exception">The get secret exception.</exception>
+        </member>
+        <member name="T:TeamTasks.Identity.Api.RequireScopeHandler">
+            <summary>
+            Represents the require scope authorization handler.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.RequireScopeHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,TeamTasks.Identity.Api.ScopeRequirement)">
+            <summary>
+            Handle requirement by authorization handler context.
+            </summary>
+            <param name="context">The Authorization Handler Context.</param>
+            <param name="requirement">The scope requirement.</param>
+            <returns></returns>
+        </member>
+        <member name="T:TeamTasks.Identity.Api.ScopeRequirement">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="M:TeamTasks.Identity.Api.ScopeRequirement.#ctor(System.String,System.String)">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="P:TeamTasks.Identity.Api.ScopeRequirement.Issuer">
+            <summary>
+            Gets issuer.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Identity.Api.ScopeRequirement.Scope">
+            <summary>
+            Gets scope.
+            </summary>
+        </member>
+    </members>
+</doc>

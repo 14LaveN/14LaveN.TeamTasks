@@ -1,0 +1,7 @@
+{
+  "TeamTasks.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application",
+  "TeamTasks.Cache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache",
+  "TeamTasks.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain",
+  "TeamTasks.Identity.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain",
+  "TeamTasks.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence"
+}

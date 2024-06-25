@@ -1,0 +1,15 @@
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\bin\Debug\net8.0\TeamTasks.Identity.Domain.deps.json
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\bin\Debug\net8.0\TeamTasks.Identity.Domain.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\bin\Debug\net8.0\TeamTasks.Identity.Domain.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\bin\Debug\net8.0\TeamTasks.Domain.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\bin\Debug\net8.0\TeamTasks.Domain.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.csproj.CopyComplete
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\refint\TeamTasks.Identity.Domain.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\TeamTasks.Identity.Domain.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Domain\obj\Debug\net8.0\ref\TeamTasks.Identity.Domain.dll

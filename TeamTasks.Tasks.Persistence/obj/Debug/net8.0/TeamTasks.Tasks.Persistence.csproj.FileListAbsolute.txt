@@ -1,0 +1,11 @@
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\bin\Debug\net8.0\TeamTasks.Tasks.Persistence.deps.json
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\bin\Debug\net8.0\TeamTasks.Tasks.Persistence.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\bin\Debug\net8.0\TeamTasks.Tasks.Persistence.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\refint\TeamTasks.Tasks.Persistence.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\TeamTasks.Tasks.Persistence.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Tasks.Persistence\obj\Debug\net8.0\ref\TeamTasks.Tasks.Persistence.dll

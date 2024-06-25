@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Identity.IntegrationEvents\TeamTasks.Identity.IntegrationEvents.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
+      <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.6.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.1" />
+    </ItemGroup>
+
+</Project>
