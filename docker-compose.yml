@@ -43,11 +43,6 @@
     ports:
       - 9200:9200
       
-  mongodb:
-    image: mongo:latest
-    ports:
-      - 27017:27017
-      
   redis:
     image: redis:latest
     ports:

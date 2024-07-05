@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "18GmdzOnk8ECRrFsxjO2J/fpuktkUyaovZTPLkwVUas=",
+  "Hash": "gyMlIO04S8H/r7leTbYzMQU3mRkfl3nWODq2F7FPly4=",
   "Source": "TeamTasks.Web",
   "BasePath": "_content/TeamTasks.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TeamTasks.Web\\wwwroot",
       "Source": "TeamTasks.Web",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
       "BasePath": "_content/TeamTasks.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TeamTasks.Web.styles.css",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TeamTasks.Web.styles.css",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "TeamTasks.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TeamTasks.Web.styles.css"
+      "OriginalItemSpec": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TeamTasks.Web.styles.css"
     },
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TeamTasks.Web.bundle.scp.css",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TeamTasks.Web.bundle.scp.css",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "TeamTasks.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TeamTasks.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TeamTasks.Web.bundle.scp.css"
     },
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\app.css",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\app.css",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\favicon.png",
+      "Identity": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\favicon.png",
       "SourceId": "TeamTasks.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Web\\wwwroot\\",
       "BasePath": "_content/TeamTasks.Web",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
