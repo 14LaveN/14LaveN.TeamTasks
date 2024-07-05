@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "C2CwaPCZbmqsOjl78zof7+49y39XzH5nk9+bQ4w9tYFzdiW77dDTypAC7vWgJhDrujUkBXt0NhYxcDocVtd7fg==",
+  "dgSpecHash": "3eo+qiOHErdXR8jez2rWWqVLwR0SoheRpfvijo+UPzoyx14+mYSFQAT98UhO1lRL9jnfQDQZvzlKST4cCDt6uA==",
   "success": true,
-  "projectFilePath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
+  "projectFilePath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ponom\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\mongodb.bson\\2.26.0\\mongodb.bson.2.26.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\mongodb.bson\\2.26.0\\mongodb.bson.2.26.0.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

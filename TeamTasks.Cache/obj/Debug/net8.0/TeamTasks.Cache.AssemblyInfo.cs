@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamTasks.Cache")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb68a9f132626e1dbd9df6d728d6bc10806cfd10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09818158996a0180a62e56585a3ab93ee143706f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamTasks.Cache")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamTasks.Cache")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
