@@ -1,11 +1,12 @@
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.GeneratedMSBuildEditorConfig.editorconfig
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfoInputs.cache
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfo.cs
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.CoreCompileInputs.cache
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.deps.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.sourcelink.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\refint\TeamTasks.Cache.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.pdb

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TeamTasks.Application.Core.Abstractions;
 using TeamTasks.Identity.Domain.Repositories;
 using TeamTasks.Persistence;
 using TeamTasks.Domain.Common.Core.Primitives.Maybe;
@@ -12,7 +13,7 @@ namespace TeamTasks.Identity.Persistence.Repositories;
 /// Represents the user repository class.
 /// </summary>
 /// <param name="userDbContext">The user database context.</param>
-public class UserRepository(BaseDbContext userDbContext)
+public class UserRepository(IDbContext userDbContext)
     : IUserRepository
 {
     /// <inheritdoc />

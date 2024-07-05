@@ -1,8 +1,5 @@
 using AutoFixture;
 using Bogus;
-using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using TeamTasks.Persistence;
 using TeamTasks.Persistence;
 
 namespace TeamTasks.Common.Tests.Abstractions;

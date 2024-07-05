@@ -20,7 +20,9 @@ using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
+using TeamTasks.Domain.Enumerations;
 using TeamTasks.Identity.Domain.Entities;
+using TeamTasks.Infrastructure.Authentication;
 
 namespace TeamTasks.Identity.Application.Commands;
 
@@ -45,7 +47,7 @@ public static class ChangePassword
         /// <inheritdoc />
         public void MapEndpoint(IEndpointRouteBuilder app)
         {
-            app.MapPost(ApiRoutes.Users.ChangePassword, async (
+            app.MapPut(ApiRoutes.Users.ChangePassword, async (
                     [FromBody] string password,
                     ISender sender) =>
                 {
@@ -56,6 +58,7 @@ public static class ChangePassword
 
                     return result;
                 })
+                .HasPermission(Permission.ReadMember.ToString())
                 .Produces(StatusCodes.Status401Unauthorized, typeof(ApiErrorResponse))
                 .Produces(StatusCodes.Status200OK)
                 .RequireRateLimiting("fixed");

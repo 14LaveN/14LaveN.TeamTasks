@@ -13,4 +13,14 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.BackgroundTasks\TeamTasks.BackgroundTasks.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.1" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Core" Version="8.0.1" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
+    </ItemGroup>
+
 </Project>

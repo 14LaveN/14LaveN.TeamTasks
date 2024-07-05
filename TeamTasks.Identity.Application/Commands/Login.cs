@@ -13,6 +13,7 @@ using TeamTasks.Application.ApiHelpers.Contracts;
 using TeamTasks.Application.ApiHelpers.Policy;
 using TeamTasks.Application.ApiHelpers.Responses;
 using TeamTasks.Application.Core.Abstractions.Endpoint;
+using TeamTasks.Application.Core.Abstractions.Helpers.JWT;
 using TeamTasks.Application.Core.Abstractions.Idempotency;
 using TeamTasks.Application.Core.Abstractions.Messaging;
 using TeamTasks.Domain.Common.Core.Errors;
@@ -21,6 +22,7 @@ using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Identity.Domain.Entities;
+using TeamTasks.Identity.Infrastructure.Authentication;
 using TeamTasks.Identity.Infrastructure.Settings.User;
 using TeamTasks.Identity.Persistence.Extensions;
 
@@ -82,12 +84,14 @@ public static class Login
     /// <param name="logger">The logger.</param>
     /// <param name="userManager">The user manager.</param>
     /// <param name="jwtOptions">The json web token options.</param>
+    /// <param name="permissionService">The permission provider.</param>
     /// <param name="signInManager">The sign in manager.</param>
     internal sealed class CommandHandler(
             ILogger<CommandHandler> logger,
             UserManager<User> userManager,
             IOptions<JwtOptions> jwtOptions,
-            SignInManager<User> signInManager)
+            SignInManager<User> signInManager,
+            IPermissionProvider permissionService)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -136,7 +140,7 @@ public static class Login
                     Description = "Login account",
                     StatusCode = HttpStatusCode.OK,
                     Data =  Task.FromResult(Result.Create(user, DomainErrors.General.ServerError)),
-                    AccessToken = user.GenerateAccessToken(_jwtOptions), 
+                    AccessToken =  user.GenerateAccessToken(permissionService, _jwtOptions), 
                     RefreshToken = refreshToken,
                     RefreshTokenExpireAt = refreshTokenExpireAt
                 };

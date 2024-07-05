@@ -25,3 +25,4 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Persistence\obj\Debug\net
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Persistence\obj\Debug\net8.0\refint\TeamTasks.Identity.Persistence.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Persistence\obj\Debug\net8.0\TeamTasks.Identity.Persistence.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Persistence\obj\Debug\net8.0\ref\TeamTasks.Identity.Persistence.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Persistence\obj\Debug\net8.0\TeamTasks.Identity.Persistence.sourcelink.json

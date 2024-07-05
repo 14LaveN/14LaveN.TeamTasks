@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MimeKit;
 using TeamTasks.Application.ApiHelpers.Contracts;
 using TeamTasks.Application.ApiHelpers.Policy;
 using TeamTasks.Application.ApiHelpers.Responses;
+using TeamTasks.Application.Core.Abstractions;
 using TeamTasks.Application.Core.Abstractions.Endpoint;
+using TeamTasks.Application.Core.Abstractions.Helpers.JWT;
 using TeamTasks.Application.Core.Abstractions.Idempotency;
 using TeamTasks.Application.Core.Abstractions.Messaging;
 using TeamTasks.Domain.Common.Core.Errors;
@@ -21,6 +22,7 @@ using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
+using TeamTasks.Domain.Entities;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Infrastructure.Settings.User;
 using TeamTasks.Identity.Persistence.Extensions;
@@ -66,7 +68,7 @@ public static class Register
                 {
                     if (!Guid.TryParse(requestId, out Guid parsedRequestId))
                         throw new GuidParseException(nameof(requestId), requestId);
-
+                    
                     var result = await Result.Create(request, DomainErrors.General.UnProcessableRequest)
                         .Map(registerRequest => new Command(
                             parsedRequestId,
@@ -80,6 +82,7 @@ public static class Register
 
                     return result;
                 })
+                .AllowAnonymous()
                 .Produces(StatusCodes.Status401Unauthorized, typeof(ApiErrorResponse))
                 .Produces(StatusCodes.Status200OK)
                 .RequireRateLimiting("fixed");
@@ -92,12 +95,15 @@ public static class Register
     /// <param name="logger">The logger.</param>
     /// <param name="userManager">The user manager.</param>
     /// <param name="signInManager">The sign in manager.</param>
+    /// <param name="permissionService">The permission provider.</param>
     /// <param name="jwtOptions">The json web token options.</param>
+    /// <param name="dbContext">The database context.</param>
     internal sealed class CommandHandler(
         ILogger<CommandHandler> logger,
         UserManager<User> userManager,
         SignInManager<User> signInManager,
-        IOptions<JwtOptions> jwtOptions)
+        IOptions<JwtOptions> jwtOptions,
+        IPermissionProvider permissionService)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -127,6 +133,26 @@ public static class Register
     
                 user = User.Create(firstNameResult.Value, lastNameResult.Value,request.UserName, emailResult.Value, passwordResult.Value);
                 
+                user.Roles ??= new List<Role>();
+        
+                //TODO Role? existingRole = await dbContext
+                //TODO     .Set<Role>()
+                //TODO     .Include(x => x.Permissions)
+                //TODO     .FirstOrDefaultAsync(
+                //TODO     r => r.Value == Role.Registered.Value,
+                //TODO     cancellationToken: cancellationToken);
+                //TODO 
+                //TODO if (existingRole != null)
+                //TODO {
+                //TODO     foreach (var permission in existingRole.Permissions)
+                //TODO     {
+                //TODO         if (user.Roles.SelectMany(r => r.Permissions).All(p => p.Id != permission.Id))
+                //TODO         {
+                //TODO             user.Roles.Add(existingRole);
+                //TODO         }
+                //TODO     }
+                //TODO }
+                
                 var result = await userManager.CreateAsync(user, request.Password);
     
                 if (result.Succeeded)
@@ -148,11 +174,11 @@ public static class Register
                     Description = "Register account",
                     StatusCode = HttpStatusCode.OK,
                     Data = Task.FromResult(Result.Create(user, DomainErrors.General.ServerError)),
-                    AccessToken = user.GenerateAccessToken(_jwtOptions),
+                    AccessToken = user.GenerateAccessToken(permissionService,_jwtOptions),
                     RefreshToken = refreshToken,
                     RefreshTokenExpireAt = refreshTokenExpireAt
                 };
-            }
+            } 
             catch (Exception exception)
             {
                 logger.LogError(exception, $"[RegisterCommandHandler]: {exception.Message}");

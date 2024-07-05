@@ -5,7 +5,7 @@ using TeamTasks.Domain.Core.Utility;
 
 namespace TeamTasks.Identity.Api.Common.DependencyInjection;
 
-public static class DiEndpoints
+internal static class DiEndpoints
 {
     /// <summary>
     /// Registers the necessary services with the DI framework.
@@ -31,6 +31,12 @@ public static class DiEndpoints
         return services;
     }
     
+    /// <summary>
+    /// The map endpoints in some assembly method.
+    /// </summary>
+    /// <param name="app">The web application builder.</param>
+    /// <param name="routeGroupBuilder">The route group builder.</param>
+    /// <returns>Returns the modify application builder.</returns>
     public static IApplicationBuilder MapEndpoints(
         this WebApplication app,
         RouteGroupBuilder? routeGroupBuilder = null)

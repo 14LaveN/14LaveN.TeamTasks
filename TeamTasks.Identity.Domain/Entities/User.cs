@@ -5,8 +5,11 @@ using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Events;
 using TeamTasks.Domain.Core.Primitives;
+using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.Core.Utility;
+using TeamTasks.Domain.Entities;
 using TeamTasks.Identity.Domain.Events.User;
+using Permission = TeamTasks.Domain.Enumerations.Permission;
 
 namespace TeamTasks.Identity.Domain.Entities;
 
@@ -56,6 +59,11 @@ public sealed class User
         get => new UserId(base.Id);
         set => base.Id = new UserId(value);
     }
+
+    /// <summary>
+    /// Gets or sets roles.
+    /// </summary>
+    public ICollection<Role>? Roles { get; set; }
 
     /// <summary>
     /// Gets or sets the user first name.

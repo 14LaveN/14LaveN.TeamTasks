@@ -136,6 +136,44 @@
           }
         }
       },
+      "IdentityModel/4.4.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "IdentityServer4/4.1.2": {
+        "dependencies": {
+          "IdentityModel": "4.4.0",
+          "IdentityServer4.Storage": "4.1.2",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/IdentityServer4.dll": {
+            "assemblyVersion": "4.1.2.0",
+            "fileVersion": "4.1.2.0"
+          }
+        }
+      },
+      "IdentityServer4.Storage/4.1.2": {
+        "dependencies": {
+          "IdentityModel": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.Storage.dll": {
+            "assemblyVersion": "4.1.2.0",
+            "fileVersion": "4.1.2.0"
+          }
+        }
+      },
       "MediatR/12.3.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
@@ -153,6 +191,17 @@
           "lib/netstandard2.0/MediatR.Contracts.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56601"
           }
         }
       },
@@ -577,6 +626,19 @@
           "lib/net8.0/Microsoft.IdentityModel.Protocols.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "8.0.0-preview1",
+          "Newtonsoft.Json": "13.0.1",
+          "System.IdentityModel.Tokens.Jwt": "8.0.0-preview1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "5.6.0.0",
+            "fileVersion": "5.6.0.61018"
           }
         }
       },
@@ -1895,6 +1957,17 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "VaultSharp/1.13.0.1": {
+        "dependencies": {
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/VaultSharp.dll": {
+            "assemblyVersion": "1.13.0.1",
+            "fileVersion": "1.13.0.1"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "runtime": {
           "lib/net6.0/ZstdSharp.dll": {
@@ -1917,6 +1990,7 @@
           "TeamTasks.Cache": "1.0.0",
           "TeamTasks.Domain": "1.0.0",
           "TeamTasks.Identity.Domain": "1.0.0",
+          "VaultSharp": "1.13.0.1",
           "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
@@ -1961,6 +2035,17 @@
           "TeamTasks.Identity.Domain.dll": {}
         }
       },
+      "TeamTasks.Identity.Infrastructure/1.0.0": {
+        "dependencies": {
+          "IdentityServer4": "4.1.2",
+          "MediatR": "12.3.0",
+          "TeamTasks.Application": "1.0.0",
+          "TeamTasks.Identity.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TeamTasks.Identity.Infrastructure.dll": {}
+        }
+      },
       "TeamTasks.Identity.IntegrationEvents/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -1978,7 +2063,8 @@
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
           "Microsoft.TestPlatform.TestHost": "17.6.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.0-preview1",
-          "TeamTasks.Application": "1.0.0"
+          "TeamTasks.Application": "1.0.0",
+          "TeamTasks.Identity.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TeamTasks.Infrastructure.dll": {}
@@ -2096,6 +2182,27 @@
       "path": "fluentvalidation.dependencyinjectionextensions/11.9.2",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512"
     },
+    "IdentityModel/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b18wrIx5wnZlMxAX7oVsE+nDtAJ4hajYlH0xPlaRvo4r/fz08K6pPeZvbiqS9nfNbzfIgLFmNX+FL9qR9ZR5PA==",
+      "path": "identitymodel/4.4.0",
+      "hashPath": "identitymodel.4.4.0.nupkg.sha512"
+    },
+    "IdentityServer4/4.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-blaxxGuOA7v/w1q+fxn97wZ+x2ecG1ZD4mc/N/ZOXMNeFZZhqv+4LF26Gecyik3nWrJPmbMEtQbLmRsKG8k61w==",
+      "path": "identityserver4/4.1.2",
+      "hashPath": "identityserver4.4.1.2.nupkg.sha512"
+    },
+    "IdentityServer4.Storage/4.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KoSffyZyyeCNTIyJiZnCuPakJ1QbCHlpty6gbWUj/7yl+w0PXIchgmmJnJSvddzBb8iZ2xew/vGlxWUIP17P2g==",
+      "path": "identityserver4.storage/4.1.2",
+      "hashPath": "identityserver4.storage.4.1.2.nupkg.sha512"
+    },
     "MediatR/12.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2109,6 +2216,13 @@
       "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
       "path": "mediatr.contracts/2.0.1",
       "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O1cAQYUTU8EfRqwc5/rfTns4E4hKlFlg59fuKRrST+PzsxI6H07KqRN/JjdYhAuVYxF8jPnIGbj+zuc5paOWUw==",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/3.1.0",
+      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.6": {
       "type": "package",
@@ -2459,6 +2573,13 @@
       "sha512": "sha512-oaun9CY+bMF0RxuB+TIAPpgTLQnfbWGEKAlU2TIKXUCIsKp8wTt7KGZuQBhY3+e8NQI2xnE2Rxn1ediPqn283g==",
       "path": "microsoft.identitymodel.protocols/8.0.0-preview1",
       "hashPath": "microsoft.identitymodel.protocols.8.0.0-preview1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yh3n+uXiwpBy/5+t67tYcmRxb9kwQdaKRyG/DNipRMF37bg5Jr0vENOo1BQz6OySMl5WIK544SzPjtr7/KkucA==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.6.0",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.5.6.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Tokens/8.0.0-preview1": {
       "type": "package",
@@ -3272,6 +3393,13 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "VaultSharp/1.13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0nFsF/ggmDCCppwopCLp2QGhAgDggX1m3hWluaKeTr56Bq9rmmGrFsBKpeYraKbJKbBCdeacMUS/8rH/GgvyHw==",
+      "path": "vaultsharp/1.13.0.1",
+      "hashPath": "vaultsharp.1.13.0.1.nupkg.sha512"
+    },
     "ZstdSharp.Port/0.6.2": {
       "type": "package",
       "serviceable": true,
@@ -3300,6 +3428,11 @@
       "sha512": ""
     },
     "TeamTasks.Identity.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeamTasks.Identity.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

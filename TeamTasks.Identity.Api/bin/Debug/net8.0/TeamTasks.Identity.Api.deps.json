@@ -2830,6 +2830,7 @@
           "TeamTasks.Cache": "1.0.0",
           "TeamTasks.Domain": "1.0.0",
           "TeamTasks.Identity.Domain": "1.0.0",
+          "VaultSharp": "1.13.0.1",
           "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
@@ -2912,8 +2913,8 @@
           "TeamTasks.Domain": "1.0.0",
           "TeamTasks.Identity.Contracts": "1.0.0",
           "TeamTasks.Identity.Domain": "1.0.0",
-          "TeamTasks.Identity.Infrastructure": "1.0.0",
           "TeamTasks.Identity.Persistence": "1.0.0",
+          "TeamTasks.Infrastructure": "1.0.0",
           "TeamTasks.Persistence": "1.0.0"
         },
         "runtime": {
@@ -2976,7 +2977,8 @@
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
           "Microsoft.TestPlatform.TestHost": "17.6.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.0-preview1",
-          "TeamTasks.Application": "1.0.0"
+          "TeamTasks.Application": "1.0.0",
+          "TeamTasks.Identity.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TeamTasks.Infrastructure.dll": {}

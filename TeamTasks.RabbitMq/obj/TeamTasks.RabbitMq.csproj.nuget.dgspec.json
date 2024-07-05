@@ -91,6 +91,10 @@
               "target": "Package",
               "version": "[6.6.2, )"
             },
+            "VaultSharp": {
+              "target": "Package",
+              "version": "[1.13.0.1, )"
+            },
             "prometheus-net.AspNetCore": {
               "target": "Package",
               "version": "[8.2.1, )"
@@ -144,7 +148,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -157,7 +165,27 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.ResponseCaching": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
             }

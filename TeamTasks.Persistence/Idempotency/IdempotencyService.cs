@@ -10,7 +10,7 @@ namespace TeamTasks.Persistence.Idempotency;
 internal sealed class IdempotencyService
     : IIdempotencyService
 {
-    private readonly IDbContext _dbContext;
+    private readonly BaseDbContext _dbContext;
     private readonly IUnitOfWork _unitOfWork;
 
     /// <summary>
@@ -19,7 +19,7 @@ internal sealed class IdempotencyService
     /// <param name="dbContext">The database context.</param>
     /// <param name="unitOfWork">The unit of work.</param>
     public IdempotencyService(
-        IDbContext dbContext,
+        BaseDbContext dbContext,
         IUnitOfWork unitOfWork)
     {
         _dbContext = dbContext;
@@ -46,6 +46,7 @@ internal sealed class IdempotencyService
         await _dbContext
             .Set<IdempotentRequest>()
             .AddAsync(idempotentRequest);
-        await _unitOfWork.SaveChangesAsync();
+        
+        await _dbContext.SaveChangesAsync();
     }
 }

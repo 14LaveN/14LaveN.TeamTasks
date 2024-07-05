@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Identity.Infrastructure\TeamTasks.Identity.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -21,3 +21,6 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\obj\Debug\net8.0\Te
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\obj\Debug\net8.0\ref\TeamTasks.Infrastructure.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\bin\Debug\net8.0\testhost.exe
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\bin\Debug\net8.0\testhost.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\obj\Debug\net8.0\TeamTasks.Infrastructure.sourcelink.json
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\bin\Debug\net8.0\TeamTasks.Identity.Infrastructure.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Infrastructure\bin\Debug\net8.0\TeamTasks.Identity.Infrastructure.pdb

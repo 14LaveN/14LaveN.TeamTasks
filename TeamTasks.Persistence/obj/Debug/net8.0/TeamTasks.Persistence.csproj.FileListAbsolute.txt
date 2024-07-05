@@ -17,6 +17,7 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamT
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.AssemblyInfoInputs.cache
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.AssemblyInfo.cs
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.sourcelink.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\TeamTasks.Persistence.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Persistence\obj\Debug\net8.0\refint\TeamTasks.Persistence.dll

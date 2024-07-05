@@ -23,3 +23,4 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.RabbitMq\obj\Debug\net8.0\TeamTask
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.RabbitMq\obj\Debug\net8.0\refint\TeamTasks.RabbitMq.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.RabbitMq\obj\Debug\net8.0\TeamTasks.RabbitMq.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.RabbitMq\obj\Debug\net8.0\ref\TeamTasks.RabbitMq.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.RabbitMq\obj\Debug\net8.0\TeamTasks.RabbitMq.sourcelink.json

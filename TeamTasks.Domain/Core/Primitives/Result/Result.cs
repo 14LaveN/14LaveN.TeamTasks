@@ -1,6 +1,6 @@
-﻿using TeamTasks.Domain.Core.Primitives.Result;
+﻿using TeamTasks.Domain.Common.Core.Primitives;
 
-namespace TeamTasks.Domain.Common.Core.Primitives.Result;
+namespace TeamTasks.Domain.Core.Primitives.Result;
 
 /// <summary>
 /// Represents a result of some operation, with status information and possibly an error.

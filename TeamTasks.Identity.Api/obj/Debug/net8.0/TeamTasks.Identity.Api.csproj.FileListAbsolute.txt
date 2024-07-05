@@ -317,3 +317,4 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Api\bin\Debug\net8.0\Vaul
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Api\bin\Debug\net8.0\Carter.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Api\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Api\bin\Debug\net8.0\Asp.Versioning.Http.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Api\obj\Debug\net8.0\TeamTasks.Identity.Api.sourcelink.json

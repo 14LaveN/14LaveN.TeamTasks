@@ -153,6 +153,121 @@ namespace TeamTasks.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", "dbo");
                 });
 
+            modelBuilder.Entity("RoleUser", b =>
+                {
+                    b.Property<int>("RoleValue")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("RoleValue", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RoleUser", "dbo");
+                });
+
+            modelBuilder.Entity("RoleUser1", b =>
+                {
+                    b.Property<int>("Role1Value")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("User1Id")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Role1Value", "User1Id");
+
+                    b.HasIndex("User1Id");
+
+                    b.ToTable("RoleUser1", "dbo");
+                });
+
+            modelBuilder.Entity("TeamTasks.Domain.Entities.Permission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("permissions", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "ReadMember"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "UpdateMember"
+                        });
+                });
+
+            modelBuilder.Entity("TeamTasks.Domain.Entities.Role", b =>
+                {
+                    b.Property<int>("Value")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Value"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Value");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("roles", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            Value = 1,
+                            Name = "Registered"
+                        });
+                });
+
+            modelBuilder.Entity("TeamTasks.Domain.Entities.RolePermission", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("RoleId", "PermissionId");
+
+                    b.HasIndex("PermissionId");
+
+                    b.ToTable("RolePermission", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 1
+                        },
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 2
+                        });
+                });
+
             modelBuilder.Entity("TeamTasks.Identity.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -319,6 +434,58 @@ namespace TeamTasks.Persistence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("RoleUser", b =>
+                {
+                    b.HasOne("TeamTasks.Domain.Entities.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleValue")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TeamTasks.Identity.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("RoleUser1", b =>
+                {
+                    b.HasOne("TeamTasks.Domain.Entities.Role", null)
+                        .WithMany()
+                        .HasForeignKey("Role1Value")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TeamTasks.Identity.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("User1Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TeamTasks.Domain.Entities.Role", b =>
+                {
+                    b.HasOne("TeamTasks.Identity.Domain.Entities.User", null)
+                        .WithMany("Roles")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("TeamTasks.Domain.Entities.RolePermission", b =>
+                {
+                    b.HasOne("TeamTasks.Domain.Entities.Permission", null)
+                        .WithMany()
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TeamTasks.Domain.Entities.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("TeamTasks.Identity.Domain.Entities.User", b =>
                 {
                     b.OwnsOne("TeamTasks.Domain.Common.ValueObjects.EmailAddress", "EmailAddress", b1 =>
@@ -386,6 +553,11 @@ namespace TeamTasks.Persistence.Migrations
 
                     b.Navigation("LastName")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TeamTasks.Identity.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Roles");
                 });
 #pragma warning restore 612, 618
         }

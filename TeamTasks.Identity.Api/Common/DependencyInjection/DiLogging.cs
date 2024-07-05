@@ -2,6 +2,7 @@ using System.Reflection;
 using TeamTasks.Domain.Core.Utility;
 using Serilog;
 using Serilog.Sinks.Elasticsearch;
+using TeamTasks.Application.Core.Extensions;
 
 namespace TeamTasks.Identity.Api.Common.DependencyInjection;
 
@@ -22,7 +23,7 @@ internal static class DiLogging
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(configuration)
             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(
-                configuration.GetConnectionString("ElasticSearch")!))
+                configuration.GetConnectionStringOrThrow("ElasticSearch")!))
             {
                 AutoRegisterTemplate = true,
                 AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv7,

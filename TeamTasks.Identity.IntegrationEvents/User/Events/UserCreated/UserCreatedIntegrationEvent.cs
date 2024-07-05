@@ -7,7 +7,8 @@ namespace TeamTasks.Identity.IntegrationEvents.User.Events.UserCreated;
 /// <summary>
 /// Represents the integration event that is raised when a user is created.
 /// </summary>
-public sealed class UserCreatedIntegrationEvent : IIntegrationEvent
+public sealed class UserCreatedIntegrationEvent
+    : IIntegrationEvent
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="UserCreatedIntegrationEvent"/> class.

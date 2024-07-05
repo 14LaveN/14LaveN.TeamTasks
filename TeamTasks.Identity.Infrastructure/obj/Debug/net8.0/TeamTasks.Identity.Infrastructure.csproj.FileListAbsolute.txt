@@ -19,3 +19,4 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Infrastructure\obj\Debug\
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Infrastructure\obj\Debug\net8.0\refint\TeamTasks.Identity.Infrastructure.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Infrastructure\obj\Debug\net8.0\TeamTasks.Identity.Infrastructure.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Infrastructure\obj\Debug\net8.0\ref\TeamTasks.Identity.Infrastructure.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Infrastructure\obj\Debug\net8.0\TeamTasks.Identity.Infrastructure.sourcelink.json

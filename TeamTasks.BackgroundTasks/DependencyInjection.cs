@@ -56,7 +56,7 @@ public static class DependencyInjection
                         .ForJob(jobKey)
                         .WithSimpleSchedule(schedule =>
                             schedule
-                                .WithIntervalInSeconds(5)
+                                .WithIntervalInSeconds(120)
                                 .RepeatForever()));
 
 

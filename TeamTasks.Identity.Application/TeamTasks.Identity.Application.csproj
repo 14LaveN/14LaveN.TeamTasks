@@ -11,8 +11,8 @@
       <ProjectReference Include="..\TeamTasks.Domain\TeamTasks.Domain.csproj" />
       <ProjectReference Include="..\TeamTasks.Identity.Contracts\TeamTasks.Identity.Contracts.csproj" />
       <ProjectReference Include="..\TeamTasks.Identity.Domain\TeamTasks.Identity.Domain.csproj" />
-      <ProjectReference Include="..\TeamTasks.Identity.Infrastructure\TeamTasks.Identity.Infrastructure.csproj" />
       <ProjectReference Include="..\TeamTasks.Identity.Persistence\TeamTasks.Identity.Persistence.csproj" />
+      <ProjectReference Include="..\TeamTasks.Infrastructure\TeamTasks.Infrastructure.csproj" />
       <ProjectReference Include="..\TeamTasks.Persistence\TeamTasks.Persistence.csproj" />
     </ItemGroup>
 

@@ -33,6 +33,7 @@ public static class DependencyInjection
         
         services.AddScoped<IDateTime, MachineDateTime>();
         services.AddScoped<IUserIdentifierProvider, UserIdentifierProvider>();
+        services.AddScoped<IPermissionProvider, PermissionProvider>();
         services.AddSingleton<IEventBus, EventBus>();
         services.AddSingleton<InMemoryMessageQueue>();
         services.AddHostedService<IntegrationEventProcessorJob>();

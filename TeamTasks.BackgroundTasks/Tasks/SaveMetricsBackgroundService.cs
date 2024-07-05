@@ -36,7 +36,7 @@ internal sealed class SaveMetricsBackgroundService : BackgroundService
     }
 
     /// <inheritdoc />
-    protected override async System.Threading.Tasks.Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.LogDebug("SaveMetricsBackgroundService is starting.");
 
@@ -61,7 +61,7 @@ internal sealed class SaveMetricsBackgroundService : BackgroundService
     /// </summary>
     /// <param name="stoppingToken">The stopping token.</param>
     /// <returns>The completed taskEntity.</returns>
-    private async System.Threading.Tasks.Task ConsumeSaveMetricsAsync(CancellationToken stoppingToken)
+    private async Task ConsumeSaveMetricsAsync(CancellationToken stoppingToken)
     {
         try
         {

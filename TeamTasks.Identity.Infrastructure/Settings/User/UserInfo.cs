@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace TeamTasks.Identity.Application.Core.Settings.User;
+namespace TeamTasks.Identity.Infrastructure.Settings.User;
 
 /// <summary>
 /// Represents the user info class.

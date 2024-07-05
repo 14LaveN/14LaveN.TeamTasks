@@ -1,3 +1,4 @@
+using TeamTasks.Cache;
 using TeamTasks.Domain.Core.Utility;
 
 namespace TeamTasks.Identity.Api.Common.DependencyInjection;
@@ -16,19 +17,13 @@ internal static class DiCaching
     {
         Ensure.NotNull(services, "Services is required.", nameof(services));
 
-        services.AddResponseCaching(options =>
-        {
-            options.UseCaseSensitivePaths = false; 
-            options.MaximumBodySize = 1024; 
-        });
+        services.AddCache();
         
         services.AddStackExchangeRedisCache(options =>
         {
             options.Configuration = configuration.GetConnectionString("Redis");
             options.InstanceName = "Identity_";
         });
-
-        services.AddDistributedMemoryCache();
         
         return services;
     }

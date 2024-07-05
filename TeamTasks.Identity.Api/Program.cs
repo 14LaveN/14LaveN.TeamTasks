@@ -14,9 +14,8 @@ using TeamTasks.Persistence;
 using Prometheus;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.HttpRequestDurations;
-using TeamTasks.Identity.Api.Common;
 using TeamTasks.Identity.Application;
-using ApiVersion = Asp.Versioning.ApiVersion;
+using TeamTasks.Identity.Infrastructure;
 
 #region BuilderRegion
 
@@ -66,7 +65,7 @@ builder.Services
 builder.Services
     .AddEmailService(builder.Configuration)
     .AddInfrastructure()
-    .AddBackgroundTasks(builder.Configuration)
+    .AddIdentityInfrastructure()
     .AddRabbitMq(builder.Configuration)
     .AddDatabase(builder.Configuration, builder.Environment)
     .AddMetricsOpenTelemetry(builder.Logging)
@@ -87,7 +86,7 @@ builder.Services
 
 #endregion
 
-//var vaultService = new VaultService(builder.Configuration);
+//var vaultService = new VaultService(builder.Configuration); - Problems with path to Vault secret.
 //var service = await vaultService.GetSecretAsync("/v1/secret/data/identity/secret");
 
 #region ApplicationRegion

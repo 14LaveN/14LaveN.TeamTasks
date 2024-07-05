@@ -1,0 +1,47 @@
+services:
+  redis:
+    volumes:
+      - redis-data:/data
+
+  mongodb:
+    container_name: mongodb
+
+    volumes:
+      - mongodb_data:/data/db
+
+  elasticsearch:
+    container_name: elasticsearch
+
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    environment:
+      - xpack.monitoring.enabled=true
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    networks:
+      - elastic
+
+  kibana:
+    container_name: kibana
+
+    depends_on:
+      - elasticsearch
+    environment:
+      - ELASTICSEARCH_URL=http://localhost:9200
+    networks:
+      - elastic
+
+  prometheus:
+    restart: always
+
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    restart: always
+    depends_on:
+      - prometheus
+
+    volumes:
+      - grafana-storage:/var/lib/grafana

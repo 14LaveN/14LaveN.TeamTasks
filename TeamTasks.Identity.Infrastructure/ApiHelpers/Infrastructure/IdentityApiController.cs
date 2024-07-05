@@ -5,6 +5,7 @@ using TeamTasks.Application.ApiHelpers.Contracts;
 using TeamTasks.Domain.Common.Core.Primitives;
 using TeamTasks.Domain.Common.Core.Primitives.Maybe;
 using TeamTasks.Domain.Common.Core.Primitives.Result;
+using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Domain.Repositories;
 
@@ -27,10 +28,21 @@ public class IdentityApiController
         UserRepository = userRepository;
     }
 
+    /// <summary>
+    /// Gets sender.
+    /// </summary>
     protected ISender Sender { get; }
 
+    /// <summary>
+    /// Gets the user repository.
+    /// </summary>
     protected IUserRepository UserRepository { get; }
 
+    /// <summary>
+    /// Get the profile by identifier.
+    /// </summary>
+    /// <param name="authorId">The author identifier.</param>
+    /// <returns></returns>
     [HttpGet("get-profile-by-id/{authorId}")]
     public async Task<Maybe<User>> GetProfileById([FromRoute] Guid authorId)
     {

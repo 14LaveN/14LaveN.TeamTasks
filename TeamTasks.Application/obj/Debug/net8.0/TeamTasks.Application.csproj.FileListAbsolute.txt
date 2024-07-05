@@ -1,8 +1,3 @@
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.csproj.AssemblyReference.cache
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.GeneratedMSBuildEditorConfig.editorconfig
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.AssemblyInfoInputs.cache
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.AssemblyInfo.cs
-G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.csproj.CoreCompileInputs.cache
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Application.deps.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Application.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Application.pdb
@@ -12,6 +7,12 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamT
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Cache.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Domain.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\bin\Debug\net8.0\TeamTasks.Identity.Domain.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.sourcelink.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Application\obj\Debug\net8.0\refint\TeamTasks.Application.dll

@@ -366,6 +366,7 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\Swas
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\Testcontainers.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\Testcontainers.Redis.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\VaultSharp.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\xunit.abstractions.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\xunit.core.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -449,6 +450,7 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\Team
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.AssemblyInfoInputs.cache
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.AssemblyInfo.cs
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.sourcelink.json
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\TeamTasks.Common.Tests.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Common.Tests\obj\Debug\net8.0\refint\TeamTasks.Common.Tests.dll

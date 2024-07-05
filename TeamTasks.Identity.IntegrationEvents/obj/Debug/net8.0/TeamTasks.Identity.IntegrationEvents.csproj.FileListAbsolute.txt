@@ -19,3 +19,4 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.IntegrationEvents\obj\Deb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.IntegrationEvents\obj\Debug\net8.0\refint\TeamTasks.Identity.IntegrationEvents.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.IntegrationEvents\obj\Debug\net8.0\TeamTasks.Identity.IntegrationEvents.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.IntegrationEvents\obj\Debug\net8.0\ref\TeamTasks.Identity.IntegrationEvents.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.IntegrationEvents\obj\Debug\net8.0\TeamTasks.Identity.IntegrationEvents.sourcelink.json

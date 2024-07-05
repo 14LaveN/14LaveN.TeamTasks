@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TeamTasks.Domain.Common.ValueObjects;
+using TeamTasks.Domain.Entities;
 using TeamTasks.Identity.Domain.Entities;
 
 namespace TeamTasks.Persistence.Configurations;
@@ -17,6 +18,9 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
         
         builder.HasIndex(x => x.Id)
             .HasDatabaseName("IdUserIndex");
+
+        builder.HasMany<Role>()
+            .WithMany();
 
         //TODO builder.HasData( new EmailAddress("dfsdfsdfdsf"),
         //TODO     new User(FirstName.Login("dfsdf").Value,

@@ -3,6 +3,7 @@ using TeamTasks.Identity.Domain.Events.User;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
+using TeamTasks.Identity.IntegrationEvents.User.Events.UserCreated;
 using TeamTasks.RabbitMq.Messaging;
 using TeamTasks.RabbitMq.Messaging.Settings;
 using TeamTasks.RabbitMq.Messaging.User.Publishers.UserCreated;
@@ -21,7 +22,9 @@ public static class DependencyInjection
 
         services.AddMediatR(x =>
         {
-            x.RegisterServicesFromAssemblyContaining<Program>();
+            x.RegisterServicesFromAssemblyContaining<Program>()
+                .RegisterServicesFromAssemblies(typeof(UserCreatedIntegrationEvent).Assembly,
+                    typeof(PublishIntegrationEventOnUserCreatedDomainEventHandler).Assembly);
             
             x.NotificationPublisher = new TaskWhenAllPublisher();
             x.NotificationPublisherType = typeof(TaskWhenAllPublisher);

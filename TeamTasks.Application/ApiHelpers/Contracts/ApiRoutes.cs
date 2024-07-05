@@ -122,10 +122,8 @@ public static class ApiRoutes
 
         public const string Update = "users/{userId:guid}";
 
-        public const string ChangePassword = "change-passwrod";
+        public const string ChangePassword = "users/change-password";
         
         public const string ChangeName = "change-name";
-
-        public const string SendFriendshipRequest = "users/{userId:guid}/send-friendship-request";
     }
 }

@@ -53,7 +53,7 @@ public static class ChangeName
         /// <inheritdoc />
         public void MapEndpoint(IEndpointRouteBuilder app)
         {
-            app.MapPost(ApiRoutes.Users.ChangeName, async (
+            app.MapPut(ApiRoutes.Users.ChangeName, async (
                     [FromBody] ChangeNameRequest request,
                     [FromHeader(Name = "X-Idempotency-Key")] string requestId,
                     ISender sender) =>

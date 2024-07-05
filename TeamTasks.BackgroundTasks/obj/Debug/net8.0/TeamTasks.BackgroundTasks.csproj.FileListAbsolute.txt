@@ -32,3 +32,6 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\obj\Debug\net8.0\T
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\obj\Debug\net8.0\refint\TeamTasks.BackgroundTasks.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\obj\Debug\net8.0\TeamTasks.BackgroundTasks.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\obj\Debug\net8.0\ref\TeamTasks.BackgroundTasks.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\obj\Debug\net8.0\TeamTasks.BackgroundTasks.sourcelink.json
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\bin\Debug\net8.0\TeamTasks.Identity.Infrastructure.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.BackgroundTasks\bin\Debug\net8.0\TeamTasks.Identity.Infrastructure.pdb

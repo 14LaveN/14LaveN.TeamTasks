@@ -1,4 +1,6 @@
 using AutoFixture;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using TeamTasks.Common.Tests.Abstractions;
 
 namespace TeamTasks.Common.Tests.Abstractions;
@@ -6,16 +8,17 @@ namespace TeamTasks.Common.Tests.Abstractions;
 /// <summary>
 /// Represents the base function test class.
 /// </summary>
-public abstract class BaseFunctionalTest : IClassFixture<IntegrationTestWebAppFactory>, IDisposable
+public abstract class BaseFunctionalTest : IDisposable
 {
     /// <summary>
     /// Initialize the instance of <see cref="BaseFunctionalTest"/>.
     /// </summary>
-    /// <param name="factory">The integration test web app factory.</param>
-    protected BaseFunctionalTest(IntegrationTestWebAppFactory factory)
+    protected BaseFunctionalTest()
     {
         Fixture = new Fixture();
-        HttpClient = factory.CreateClient();
+        
+        using var webApplicationFactory = new WebApplicationFactory<Program>();
+        HttpClient = webApplicationFactory.CreateClient();
     }
 
     /// <summary>

@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using TeamTasks.Identity.Infrastructure.Authentication;
 
 namespace TeamTasks.Infrastructure.Authentication;
 
@@ -21,6 +22,26 @@ public static class GetClaimByJwtToken
         
         var name = claimsPrincipal.FirstOrDefault(x=> x.Type == "name")?.Value;
         return name!;
+    }
+    
+    /// <summary>
+    /// Get permissions by JWT.
+    /// </summary>
+    /// <param name="token">The JWT.</param>
+    /// <returns>Return the permissions from token.</returns>
+    public static HashSet<string> GetPermissionsByToken(string? token)
+    {
+        JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+        JwtSecurityToken tokenInfo = handler.ReadJwtToken(token);
+        
+        var claimsPrincipal = tokenInfo.Claims;
+        
+        HashSet<string> permissions = claimsPrincipal
+            .Where(x => x.Type == CustomClaims.Permissions)
+            .Select(x => x.Value)
+            .ToHashSet();
+        
+        return permissions!;
     }
     
     /// <summary>

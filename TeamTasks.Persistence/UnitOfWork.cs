@@ -33,20 +33,14 @@ public sealed class UnitOfWork
         CancellationToken cancellationToken = default,
         bool useIfExists = false)
     {
-        IExecutionStrategy strategy = _baseDbContext.Database.CreateExecutionStrategy();
-        await strategy.ExecuteAsync(async () =>
-        {
-            IDbContextTransaction? transaction = _baseDbContext.Database.CurrentTransaction;
+        IDbContextTransaction? transaction = _baseDbContext.Database.CurrentTransaction;
             
-            if (transaction == null)
-            {
-                return _baseDbContext.Database.BeginTransactionAsync(cancellationToken);
-            }
+        if (transaction == null)
+        {
+            return await _baseDbContext.Database.BeginTransactionAsync(cancellationToken);
+        }
 
-            return useIfExists ? Task.FromResult(transaction) : _baseDbContext.Database.BeginTransactionAsync(cancellationToken);
-        });
-        
-        throw new AggregateException();
+        return await (useIfExists ? Task.FromResult(transaction) : _baseDbContext.Database.BeginTransactionAsync(cancellationToken));
     }
 
     /// <summary>
@@ -68,10 +62,10 @@ public sealed class UnitOfWork
         {
             int result = 0;
             IExecutionStrategy strategy = _baseDbContext.Database.CreateExecutionStrategy();
-            await strategy.ExecuteAsync(async () =>
-            {
+            //await strategy.ExecuteAsync(async () =>
+            //{
                 result = await _baseDbContext.SaveChangesAsync(cancellationToken);
-            });
+            //});
 
             return result;
         }

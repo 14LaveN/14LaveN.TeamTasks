@@ -375,6 +375,23 @@
       },
       "System.Memory/4.5.5": {},
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.Text.Encodings.Web/7.0.0": {},
+      "System.Text.Json/7.0.2": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "7.0.0"
+        }
+      },
+      "VaultSharp/1.13.0.1": {
+        "dependencies": {
+          "System.Text.Json": "7.0.2"
+        },
+        "runtime": {
+          "lib/net7.0/VaultSharp.dll": {
+            "assemblyVersion": "1.13.0.1",
+            "fileVersion": "1.13.0.1"
+          }
+        }
+      },
       "TeamTasks.Application/1.0.0": {
         "dependencies": {
           "FluentValidation": "11.9.2",
@@ -389,6 +406,7 @@
           "TeamTasks.Cache": "1.0.0",
           "TeamTasks.Domain": "1.0.0",
           "TeamTasks.Identity.Domain": "1.0.0",
+          "VaultSharp": "1.13.0.1",
           "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
@@ -730,6 +748,27 @@
       "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
+      "path": "system.text.encodings.web/7.0.0",
+      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/LZf/JrGyilojqwpaywb+sSz8Tew7ij4K/Sk+UW8AKfAK7KRhR6mKpKtTm06cYA7bCpGTWfYksIW+mVsdxPegQ==",
+      "path": "system.text.json/7.0.2",
+      "hashPath": "system.text.json.7.0.2.nupkg.sha512"
+    },
+    "VaultSharp/1.13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0nFsF/ggmDCCppwopCLp2QGhAgDggX1m3hWluaKeTr56Bq9rmmGrFsBKpeYraKbJKbBCdeacMUS/8rH/GgvyHw==",
+      "path": "vaultsharp/1.13.0.1",
+      "hashPath": "vaultsharp.1.13.0.1.nupkg.sha512"
     },
     "TeamTasks.Application/1.0.0": {
       "type": "project",

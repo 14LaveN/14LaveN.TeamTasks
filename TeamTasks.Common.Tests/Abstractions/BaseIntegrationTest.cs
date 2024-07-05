@@ -11,7 +11,8 @@ namespace TeamTasks.Common.Tests.Abstractions;
 /// <summary>
 /// Represents the base integration test class.
 /// </summary>
-public abstract class BaseIntegrationTest : IClassFixture<IntegrationTestWebAppFactory>, IDisposable
+public abstract class BaseIntegrationTest 
+    : IClassFixture<IntegrationTestWebAppFactory>, IDisposable
 { 
     private readonly IServiceScope _scope;
 

@@ -1,7 +1,6 @@
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using TeamTasks.Persistence;
@@ -9,7 +8,6 @@ using TeamTasks.Domain.Core.Utility;
 using TeamTasks.Identity.Application.Core.Settings.User;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Infrastructure.Settings.User;
-using TeamTasks.Persistence;
 
 namespace TeamTasks.Identity.Api.Common.DependencyInjection;
 
@@ -99,8 +97,6 @@ internal static class DiAuthorization
             .AddDeveloperSigningCredential();
         
         services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
-        
-        services.AddSingleton<IAuthorizationHandler, RequireScopeHandler>();
         
         services.AddAuthorization();
         
