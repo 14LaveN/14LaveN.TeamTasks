@@ -23,8 +23,7 @@
           "TeamTasks.Database.MetricsAndRabbitMessages": "1.0.0",
           "TeamTasks.Infrastructure": "1.0.0",
           "TeamTasks.Persistence": "1.0.0",
-          "TeamTasks.RabbitMq": "1.0.0",
-          "Microsoft.AspNetCore": "8.0.0.0"
+          "TeamTasks.RabbitMq": "1.0.0"
         },
         "runtime": {
           "TeamTasks.BackgroundTasks.dll": {}
@@ -2181,14 +2180,6 @@
         "runtime": {
           "TeamTasks.RabbitMq.dll": {}
         }
-      },
-      "Microsoft.AspNetCore/8.0.0.0": {
-        "runtime": {
-          "Microsoft.AspNetCore.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.224.6804"
-          }
-        }
       }
     }
   },
@@ -3603,11 +3594,6 @@
     },
     "TeamTasks.RabbitMq/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore/8.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -3,12 +3,6 @@ services:
     volumes:
       - redis-data:/data
 
-  mongodb:
-    container_name: mongodb
-
-    volumes:
-      - mongodb_data:/data/db
-
   elasticsearch:
     container_name: elasticsearch
 

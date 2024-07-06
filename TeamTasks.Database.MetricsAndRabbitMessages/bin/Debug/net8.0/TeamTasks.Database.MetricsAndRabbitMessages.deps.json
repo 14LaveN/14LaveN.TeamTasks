@@ -11,8 +11,7 @@
           "AspNetCore.HealthChecks.MongoDb": "8.0.1",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.6",
-          "TeamTasks.Application": "1.0.0",
-          "Microsoft.AspNetCore": "8.0.0.0"
+          "TeamTasks.Application": "1.0.0"
         },
         "runtime": {
           "TeamTasks.Database.MetricsAndRabbitMessages.dll": {}
@@ -739,14 +738,6 @@
         "runtime": {
           "TeamTasks.Identity.Domain.dll": {}
         }
-      },
-      "Microsoft.AspNetCore/8.0.0.0": {
-        "runtime": {
-          "Microsoft.AspNetCore.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.224.6804"
-          }
-        }
       }
     }
   },
@@ -1326,11 +1317,6 @@
     },
     "TeamTasks.Identity.Domain/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore/8.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

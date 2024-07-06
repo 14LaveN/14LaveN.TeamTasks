@@ -11,6 +11,25 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.C
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\refint\TeamTasks.Cache.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\ref\TeamTasks.Cache.dll
+<<<<<<< HEAD
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.CopyComplete
+=======
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.deps.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Cache.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.AssemblyReference.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfoInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.AssemblyInfo.cs
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.CoreCompileInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.sourcelink.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTask.3C48BEEA.Up2Date
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\refint\TeamTasks.Cache.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\ref\TeamTasks.Cache.dll
+>>>>>>> 489ebca6a71f99935a80a0b790d83622a2c5551a
