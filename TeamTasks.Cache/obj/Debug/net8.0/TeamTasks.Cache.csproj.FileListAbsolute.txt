@@ -11,3 +11,6 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.C
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\refint\TeamTasks.Cache.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\ref\TeamTasks.Cache.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\bin\Debug\net8.0\TeamTasks.Domain.pdb
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.csproj.CopyComplete

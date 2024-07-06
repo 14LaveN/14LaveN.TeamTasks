@@ -2,6 +2,7 @@ using System;
 using FluentAssertions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Support.UI;
 
 namespace TeamTasks.Identity.Tests.Api.e2e;
 
@@ -16,9 +17,9 @@ public sealed class AuthorizationEndToEndTest
     [Fact]
     public void HomePage_Should_Display_WelcomeMessage()
     {
-        _driver.Navigate().GoToUrl("https://localhost:7135");
+        _driver.Navigate().GoToUrl("https://localhost:7135/index.html");
 
-        var welcomeMessage = _driver.FindElement(By.XPath("//h1[contains(text(), 'Welcome')]"));
+        var welcomeMessage = _driver.FindElement(By.TagName("renderedMarkdown"));
 
         welcomeMessage.Should().NotBeNull();
     }

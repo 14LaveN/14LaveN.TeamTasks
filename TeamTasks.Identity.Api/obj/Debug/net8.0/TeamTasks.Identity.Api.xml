@@ -20,14 +20,6 @@
             <param name="configuration">The configuration.</param>
             <returns>The same service collection.</returns>
         </member>
-        <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiConsul.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            Registers the necessary services with the DI framework.
-            </summary>
-            <param name="services">The service collection.</param>
-            <param name="configuration">The configuration.</param>
-            <returns>The same service collection.</returns>
-        </member>
         <member name="M:TeamTasks.Identity.Api.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             <summary>
             Registers the necessary services with the DI framework.

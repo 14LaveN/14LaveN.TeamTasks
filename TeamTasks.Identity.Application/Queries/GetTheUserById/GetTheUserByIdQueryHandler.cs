@@ -1,13 +1,8 @@
-using System.Net;
-using System.Security.Authentication;
 using Microsoft.Extensions.Logging;
 using TeamTasks.Identity.Domain.Repositories;
-using TeamTasks.Application.ApiHelpers.Responses;
 using TeamTasks.Application.Core.Abstractions.Messaging;
 using TeamTasks.Domain.Common.Core.Errors;
-using TeamTasks.Domain.Common.Core.Exceptions;
 using TeamTasks.Domain.Common.Core.Primitives.Maybe;
-using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Identity.Contracts.Get;
 

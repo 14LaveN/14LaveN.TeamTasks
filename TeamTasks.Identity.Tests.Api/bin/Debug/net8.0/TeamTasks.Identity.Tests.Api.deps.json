@@ -42,11 +42,14 @@
           "Microsoft.AspNetCore.Mvc.Testing": "8.0.6",
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.6",
           "Microsoft.NET.Test.Sdk": "17.10.0",
           "Roslynator.Analyzers": "4.12.4",
           "Roslynator.CodeAnalysis.Analyzers": "4.12.4",
           "Roslynator.CodeFixes": "4.12.4",
           "Roslynator.Formatting.Analyzers": "4.12.4",
+          "Selenium.WebDriver": "4.22.0",
           "TeamTasks.Common.Tests": "1.0.0",
           "coverlet.collector": "6.0.2",
           "coverlet.msbuild": "6.0.2",
@@ -84,12 +87,12 @@
           "Microsoft.AspNetCore.Hosting": "8.0.0.0",
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "8.0.0.0",
           "Microsoft.AspNetCore.Html.Abstractions": "8.0.0.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Http.Connections.Common": "8.0.0.0",
           "Microsoft.AspNetCore.Http.Connections": "8.0.0.0",
-          "Microsoft.AspNetCore.Http": "8.0.0.0",
-          "Microsoft.AspNetCore.Http.Extensions": "8.0.0.0",
-          "Microsoft.AspNetCore.Http.Features": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Extensions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Features.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Http.Results": "8.0.0.0",
           "Microsoft.AspNetCore.HttpLogging": "8.0.0.0",
           "Microsoft.AspNetCore.HttpOverrides": "8.0.0.0",
@@ -116,8 +119,8 @@
           "Microsoft.AspNetCore.Razor": "8.0.0.0",
           "Microsoft.AspNetCore.Razor.Runtime": "8.0.0.0",
           "Microsoft.AspNetCore.RequestDecompression": "8.0.0.0",
-          "Microsoft.AspNetCore.ResponseCaching.Abstractions": "8.0.0.0",
-          "Microsoft.AspNetCore.ResponseCaching": "8.0.0.0",
+          "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.ResponseCaching.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.ResponseCompression": "8.0.0.0",
           "Microsoft.AspNetCore.Rewrite": "8.0.0.0",
           "Microsoft.AspNetCore.Routing.Abstractions": "8.0.0.0",
@@ -137,7 +140,7 @@
           "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.0.0",
           "Microsoft.AspNetCore.StaticFiles": "8.0.0.0",
           "Microsoft.AspNetCore.WebSockets": "8.0.0.0",
-          "Microsoft.AspNetCore.WebUtilities": "8.0.0.0",
+          "Microsoft.AspNetCore.WebUtilities.Reference": "8.0.0.0",
           "Microsoft.CSharp": "8.0.0.0",
           "Microsoft.Extensions.Caching.Abstractions.Reference": "8.0.0.0",
           "Microsoft.Extensions.Caching.Memory.Reference": "8.0.0.0",
@@ -179,7 +182,7 @@
           "Microsoft.Extensions.Primitives.Reference": "8.0.0.0",
           "Microsoft.Extensions.WebEncoders": "8.0.0.0",
           "Microsoft.JSInterop": "8.0.0.0",
-          "Microsoft.Net.Http.Headers": "8.0.0.0",
+          "Microsoft.Net.Http.Headers.Reference": "8.0.0.0",
           "Microsoft.VisualBasic.Core": "13.0.0.0",
           "Microsoft.VisualBasic": "10.0.0.0",
           "Microsoft.Win32.Primitives": "8.0.0.0",
@@ -515,6 +518,34 @@
           "lib/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Http/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.WebUtilities": "2.2.0",
+          "Microsoft.Extensions.ObjectPool": "7.0.0",
+          "Microsoft.Extensions.Options": "8.0.2",
+          "Microsoft.Net.Http.Headers": "2.2.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Net.Http.Headers": "2.2.0",
+          "System.Buffers": "4.5.1"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.6": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "8.0.6",
@@ -571,6 +602,20 @@
           "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.ResponseCaching/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.AspNetCore.ResponseCaching.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1"
+        }
+      },
+      "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        }
+      },
       "Microsoft.AspNetCore.TestHost/8.0.6": {
         "dependencies": {
           "System.IO.Pipelines": "8.0.0"
@@ -583,6 +628,12 @@
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.TestHost.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+        "dependencies": {
+          "Microsoft.Net.Http.Headers": "2.2.0",
+          "System.Text.Encodings.Web": "8.0.0"
         }
       },
       "Microsoft.CodeCoverage/17.10.0": {
@@ -1069,6 +1120,12 @@
           "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
+      "Microsoft.Net.Http.Headers/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0",
+          "System.Buffers": "4.5.1"
+        }
+      },
       "Microsoft.NET.Test.Sdk/17.10.0": {
         "dependencies": {
           "Microsoft.CodeCoverage": "17.10.0",
@@ -1498,6 +1555,20 @@
       "Roslynator.CodeAnalysis.Analyzers/4.12.4": {},
       "Roslynator.CodeFixes/4.12.4": {},
       "Roslynator.Formatting.Analyzers/4.12.4": {},
+      "Selenium.WebDriver/4.22.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.dll": {}
+        }
+      },
       "Serilog/4.0.0": {
         "runtime": {
           "lib/net8.0/Serilog.dll": {
@@ -1942,7 +2013,13 @@
       },
       "TeamTasks.Cache/1.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0"
+          "Microsoft.AspNetCore.ResponseCaching": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.6",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "TeamTasks.Domain": "1.0.0"
         },
         "runtime": {
           "TeamTasks.Cache.dll": {}
@@ -2194,7 +2271,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Abstractions/8.0.0.0": {
+      "Microsoft.AspNetCore.Http.Abstractions.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Abstractions.dll": {}
         },
@@ -2212,19 +2289,19 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http/8.0.0.0": {
+      "Microsoft.AspNetCore.Http.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Extensions/8.0.0.0": {
+      "Microsoft.AspNetCore.Http.Extensions.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Extensions.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Features/8.0.0.0": {
+      "Microsoft.AspNetCore.Http.Features.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Features.dll": {}
         },
@@ -2386,13 +2463,13 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.ResponseCaching.Abstractions/8.0.0.0": {
+      "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.ResponseCaching/8.0.0.0": {
+      "Microsoft.AspNetCore.ResponseCaching.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.ResponseCaching.dll": {}
         },
@@ -2512,7 +2589,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.WebUtilities/8.0.0.0": {
+      "Microsoft.AspNetCore.WebUtilities.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.WebUtilities.dll": {}
         },
@@ -2764,7 +2841,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Net.Http.Headers/8.0.0.0": {
+      "Microsoft.Net.Http.Headers.Reference/8.0.0.0": {
         "compile": {
           "Microsoft.Net.Http.Headers.dll": {}
         },
@@ -3879,6 +3956,34 @@
       "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.6",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.8.0.6.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Http/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YogBSMotWPAS/X5967pZ+yyWPQkThxhmzAwyCHCSSldzYBkW5W5d6oPfBaPqQOnSHYTpSOSOkpZoAce0vwb6+A==",
+      "path": "microsoft.aspnetcore.http/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2DgZ9rWrJtuR7RYiew01nGRzuQBDaGHGmK56Rk54vsLLsCdzuFUPqbDTJCS1qJQWTbmbIQ9wGIOjpxA1t0l7/w==",
+      "path": "microsoft.aspnetcore.http.extensions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.6": {
       "type": "package",
       "serviceable": true,
@@ -3907,12 +4012,33 @@
       "path": "microsoft.aspnetcore.mvc.versioning.apiexplorer/5.1.0",
       "hashPath": "microsoft.aspnetcore.mvc.versioning.apiexplorer.5.1.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.ResponseCaching/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MEBP1UwGD7X1vhO43LN5KhZDt4HMTX7u1YA0nq7HR6IDRhWczHczJPDu3GbL01IMdb03hyT/glJIv8PI5zKtnA==",
+      "path": "microsoft.aspnetcore.responsecaching/2.2.0",
+      "hashPath": "microsoft.aspnetcore.responsecaching.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CIHWEKrHzZfFp7t57UXsueiSA/raku56TgRYauV/W1+KAQq6vevz60zjEKaazt3BI76zwMz3B4jGWnCwd8kwQw==",
+      "path": "microsoft.aspnetcore.responsecaching.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.TestHost/8.0.6": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-4SEGEED0TB2Q1IiQGkhMEL4wgNIbZeuDpXEQazddt3MprdSHLZEW0esjrICuuSI+zLT80tEm4xp04UrmS0c16g==",
       "path": "microsoft.aspnetcore.testhost/8.0.6",
       "hashPath": "microsoft.aspnetcore.testhost.8.0.6.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9ErxAAKaDzxXASB/b5uLEkLgUWv1QbeVxyJYEHQwMaxXOeFFVkQxiq8RyfVcifLU7NR0QY0p3acqx4ZpYfhHDg==",
+      "path": "microsoft.aspnetcore.webutilities/2.2.0",
+      "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.10.0": {
       "type": "package",
@@ -4257,6 +4383,13 @@
       "path": "microsoft.identitymodel.tokens/8.0.0-preview1",
       "hashPath": "microsoft.identitymodel.tokens.8.0.0-preview1.nupkg.sha512"
     },
+    "Microsoft.Net.Http.Headers/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
+      "path": "microsoft.net.http.headers/2.2.0",
+      "hashPath": "microsoft.net.http.headers.2.2.0.nupkg.sha512"
+    },
     "Microsoft.NET.Test.Sdk/17.10.0": {
       "type": "package",
       "serviceable": true,
@@ -4410,6 +4543,13 @@
       "sha512": "sha512-tW/2oPi73/GekGT0RB4JC7RQjvqlrDXrUxU9w6m0yrYywd/yCU32gG+/Wz59AmcCR3H/dTtzRm7brabHkO9A+Q==",
       "path": "roslynator.formatting.analyzers/4.12.4",
       "hashPath": "roslynator.formatting.analyzers.4.12.4.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t2ZzGjpA85tIfk820howgg4r0bkelA4MiulUdqIcewgKPlznHenp4MczaX0tXXmjbRRTbMcRPA+JfnxFoE47AQ==",
+      "path": "selenium.webdriver/4.22.0",
+      "hashPath": "selenium.webdriver.4.22.0.nupkg.sha512"
     },
     "Serilog/4.0.0": {
       "type": "package",
@@ -4850,7 +4990,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Abstractions/8.0.0.0": {
+    "Microsoft.AspNetCore.Http.Abstractions.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4865,17 +5005,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http/8.0.0.0": {
+    "Microsoft.AspNetCore.Http.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Extensions/8.0.0.0": {
+    "Microsoft.AspNetCore.Http.Extensions.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Features/8.0.0.0": {
+    "Microsoft.AspNetCore.Http.Features.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5010,12 +5150,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.ResponseCaching.Abstractions/8.0.0.0": {
+    "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.ResponseCaching/8.0.0.0": {
+    "Microsoft.AspNetCore.ResponseCaching.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5115,7 +5255,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.WebUtilities/8.0.0.0": {
+    "Microsoft.AspNetCore.WebUtilities.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5325,7 +5465,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Net.Http.Headers/8.0.0.0": {
+    "Microsoft.Net.Http.Headers.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

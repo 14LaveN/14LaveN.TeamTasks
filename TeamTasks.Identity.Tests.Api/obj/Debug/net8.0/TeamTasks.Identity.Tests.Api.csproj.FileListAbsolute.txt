@@ -497,3 +497,7 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\obj\Debug\net8.
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\obj\Debug\net8.0\TeamTasks.Identity.Tests.Api.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\obj\Debug\net8.0\TeamTasks.Identity.Tests.Api.genruntimeconfig.cache
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\obj\Debug\net8.0\ref\TeamTasks.Identity.Tests.Api.dll
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Tests.Api\bin\Debug\net8.0\WebDriver.dll
