@@ -54,11 +54,13 @@ public static class JwtExtensions
     {
         HashSet<string> permissions = permissionService.Permissions;
 
-        List<Claim> claims = [];
-        
-        if (!permissions.IsNullOrEmpty()) 
+        List<Claim> claims =
+        [
+        ];
+
+        if (permissions.IsNullOrEmpty()) 
             claims.AddRange(user.Roles!
-                .Last()
+                .First()
                 .Permissions
                 .ToList()
                 .Select(permission =>

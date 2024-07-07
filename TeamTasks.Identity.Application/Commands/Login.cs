@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TeamTasks.Application.ApiHelpers.Contracts;
@@ -21,10 +22,12 @@ using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
+using TeamTasks.Domain.Entities;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Infrastructure.Authentication;
 using TeamTasks.Identity.Infrastructure.Settings.User;
 using TeamTasks.Identity.Persistence.Extensions;
+using TeamTasks.Persistence;
 
 namespace TeamTasks.Identity.Application.Commands;
 
@@ -91,7 +94,8 @@ public static class Login
             UserManager<User> userManager,
             IOptions<JwtOptions> jwtOptions,
             SignInManager<User> signInManager,
-            IPermissionProvider permissionService)
+            IPermissionProvider permissionService,
+            BaseDbContext dbContext)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -119,6 +123,33 @@ public static class Login
                     logger.LogWarning("The password does not meet the assessment criteria");
                     throw new AuthenticationException();
                 }
+                
+                Role? existingRole = await dbContext
+                    .Set<Role>()
+                    .Include(x => x.Permissions)
+                    .FirstOrDefaultAsync(r => r.Value == Role.Registered.Value, cancellationToken: cancellationToken);
+
+                user.Roles ??= [];
+                
+                if (existingRole != null
+                    && user.Roles is not null)
+                {
+                    bool hasAllPermissions = existingRole.Permissions
+                        .All(permission => 
+                            user.Roles
+                                .SelectMany(r => r.Permissions)
+                                .Any(p => p.Id == permission.Id));
+
+                    if (!hasAllPermissions)
+                    {
+                        user.Roles.Add(existingRole);
+                    }
+                }
+                
+                //TODO Create the roles in generate access token.
+
+                dbContext.Set<User>().Update(user);
+                await dbContext.SaveChangesAsync(cancellationToken);
                 
                 var result = await _signInManager.PasswordSignInAsync(
                     request.UserName,

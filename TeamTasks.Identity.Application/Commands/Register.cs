@@ -135,27 +135,6 @@ public static class Register
     
                 user = User.Create(firstNameResult.Value, lastNameResult.Value,request.UserName, emailResult.Value, passwordResult.Value);
                 
-                user.Roles ??= new List<Role>();
-        
-                Role? existingRole = await dbContext
-                    .Set<Role>()
-                    .Include(x => x.Permissions)
-                    .FirstOrDefaultAsync(r => r.Value == Role.Registered.Value, cancellationToken: cancellationToken);
-
-                if (existingRole != null && !user.Roles.Any(r => r.Value == existingRole.Value))
-                {
-                    bool hasAllPermissions = existingRole.Permissions
-                        .All(permission => 
-                        user.Roles
-                            .SelectMany(r => r.Permissions)
-                            .Any(p => p.Id == permission.Id));
-
-                    if (hasAllPermissions)
-                    {
-                        user.Roles.Add(existingRole);
-                    }
-                }
-                
                 var result = await userManager.CreateAsync(user, request.Password);
                 
                 var user2 = await dbContext
