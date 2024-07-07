@@ -1,4 +1,5 @@
 using System.Reflection;
+using MongoDB.Bson;
 using TeamTasks.Domain.Core.Utility;
 using Serilog;
 using Serilog.Sinks.Elasticsearch;
@@ -21,7 +22,7 @@ internal static class DiLogging
         Ensure.NotNull(services, "Services is required.", nameof(services));
         
         Log.Logger = new LoggerConfiguration()
-            .ReadFrom.Configuration(configuration)
+            .WriteTo.Console()
             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(
                 configuration.GetConnectionStringOrThrow("ElasticSearch")!))
             {

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TeamTasks.Application.ApiHelpers.Contracts;
@@ -103,7 +104,8 @@ public static class Register
         UserManager<User> userManager,
         SignInManager<User> signInManager,
         IOptions<JwtOptions> jwtOptions,
-        IPermissionProvider permissionService)
+        IPermissionProvider permissionService,
+        IDbContext dbContext)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -135,26 +137,33 @@ public static class Register
                 
                 user.Roles ??= new List<Role>();
         
-                //TODO Role? existingRole = await dbContext
-                //TODO     .Set<Role>()
-                //TODO     .Include(x => x.Permissions)
-                //TODO     .FirstOrDefaultAsync(
-                //TODO     r => r.Value == Role.Registered.Value,
-                //TODO     cancellationToken: cancellationToken);
-                //TODO 
-                //TODO if (existingRole != null)
-                //TODO {
-                //TODO     foreach (var permission in existingRole.Permissions)
-                //TODO     {
-                //TODO         if (user.Roles.SelectMany(r => r.Permissions).All(p => p.Id != permission.Id))
-                //TODO         {
-                //TODO             user.Roles.Add(existingRole);
-                //TODO         }
-                //TODO     }
-                //TODO }
+                Role? existingRole = await dbContext
+                    .Set<Role>()
+                    .Include(x => x.Permissions)
+                    .FirstOrDefaultAsync(r => r.Value == Role.Registered.Value, cancellationToken: cancellationToken);
+
+                if (existingRole != null && !user.Roles.Any(r => r.Value == existingRole.Value))
+                {
+                    bool hasAllPermissions = existingRole.Permissions
+                        .All(permission => 
+                        user.Roles
+                            .SelectMany(r => r.Permissions)
+                            .Any(p => p.Id == permission.Id));
+
+                    if (hasAllPermissions)
+                    {
+                        user.Roles.Add(existingRole);
+                    }
+                }
                 
                 var result = await userManager.CreateAsync(user, request.Password);
-    
+                
+                var user2 = await dbContext
+                    .Set<User>()
+                    .Include(x => x.Roles)
+                    .ThenInclude(x => x.Permissions)
+                    .FirstOrDefaultAsync(x => x.Id == Guid.Parse("324343d2-4e4d-413e-86fa-e1c486d16619"));
+    //TODO Create the mechanism which update the user and create he the role in other command.
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, false);

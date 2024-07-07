@@ -10,3 +10,15 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\ref\TeamTasks.Identity.Contracts.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.sourcelink.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\bin\Debug\net8.0\TeamTasks.Identity.Contracts.deps.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\bin\Debug\net8.0\TeamTasks.Identity.Contracts.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\bin\Debug\net8.0\TeamTasks.Identity.Contracts.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.AssemblyInfoInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.AssemblyInfo.cs
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.csproj.CoreCompileInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.sourcelink.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\refint\TeamTasks.Identity.Contracts.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\TeamTasks.Identity.Contracts.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Identity.Contracts\obj\Debug\net8.0\ref\TeamTasks.Identity.Contracts.dll

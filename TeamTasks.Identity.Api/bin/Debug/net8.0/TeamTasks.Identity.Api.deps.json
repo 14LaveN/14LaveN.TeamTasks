@@ -29,6 +29,7 @@
           "Prometheus.Client.AspNetCore": "5.0.0",
           "Prometheus.Client.HttpRequestDurations": "3.6.0",
           "Serilog.Settings.Configuration": "8.0.1",
+          "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.Elasticsearch": "10.0.0",
           "TeamTasks.BackgroundTasks": "1.0.0",
           "TeamTasks.Email": "1.0.0",
@@ -1996,6 +1997,17 @@
           "lib/net8.0/Serilog.Settings.Configuration.dll": {
             "assemblyVersion": "8.0.1.0",
             "fileVersion": "8.0.1.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/6.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Sinks.Console.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
           }
         }
       },
@@ -4214,6 +4226,13 @@
       "sha512": "sha512-KOEABqMUdEc8Lpq51Nmiv69Je53mKE6yle4ac2jt3QYiBI0FKKFZCVV6MnkD/z3FonNMjUs/vLOa1mrhzexgCA==",
       "path": "serilog.settings.configuration/8.0.1",
       "hashPath": "serilog.settings.configuration.8.0.1.nupkg.sha512"
+    },
+    "Serilog.Sinks.Console/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
+      "path": "serilog.sinks.console/6.0.0",
+      "hashPath": "serilog.sinks.console.6.0.0.nupkg.sha512"
     },
     "Serilog.Sinks.Elasticsearch/10.0.0": {
       "type": "package",

@@ -56,11 +56,14 @@ public static class JwtExtensions
 
         List<Claim> claims = [];
         
-        foreach (Permission permission in user.Roles.Last().Permissions.ToList())
-        {
-            claims.Add(new(CustomClaims.Permissions, permission.Name));
-        }
-        
+        if (!permissions.IsNullOrEmpty()) 
+            claims.AddRange(user.Roles!
+                .Last()
+                .Permissions
+                .ToList()
+                .Select(permission =>
+                    new Claim(CustomClaims.Permissions, permission.Name)));
+
         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Secret.PadRight(64)));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256Signature);
         

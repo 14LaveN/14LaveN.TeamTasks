@@ -1,46 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj": {}
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj": {}
   },
   "projects": {
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj",
         "projectName": "TeamTasks.Application",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
               }
             }
           }
@@ -116,56 +109,49 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj",
         "projectName": "TeamTasks.BackgroundTasks",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj"
               }
             }
           }
@@ -237,41 +223,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj",
         "projectName": "TeamTasks.Cache",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\TeamTasks.Cache.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Cache\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
               }
             }
           }
@@ -327,41 +306,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj",
         "projectName": "TeamTasks.Database.MetricsAndRabbitMessages",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\TeamTasks.Database.MetricsAndRabbitMessages.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Database.MetricsAndRabbitMessages\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               }
             }
           }
@@ -405,33 +377,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
         "projectName": "TeamTasks.Domain",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -479,33 +444,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj",
         "projectName": "TeamTasks.Email",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -556,50 +514,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj",
         "projectName": "TeamTasks.Identity.Api",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\TeamTasks.Identity.Api.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Email\\TeamTasks.Email.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
               }
             }
           }
@@ -700,6 +651,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Serilog.Sinks.Elasticsearch": {
               "target": "Package",
               "version": "[10.0.0, )"
@@ -732,59 +687,52 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
         "projectName": "TeamTasks.Identity.Application",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
               }
             }
           }
@@ -848,33 +796,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj",
         "projectName": "TeamTasks.Identity.Contracts",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -908,41 +849,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj",
         "projectName": "TeamTasks.Identity.Domain",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
               }
             }
           }
@@ -978,44 +912,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj",
         "projectName": "TeamTasks.Identity.Infrastructure",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
               }
             }
           }
@@ -1055,44 +982,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj",
         "projectName": "TeamTasks.Identity.IntegrationEvents",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
               }
             }
           }
@@ -1128,50 +1048,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj",
         "projectName": "TeamTasks.Identity.Persistence",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
               }
             }
           }
@@ -1215,44 +1128,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj",
         "projectName": "TeamTasks.Infrastructure",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Infrastructure\\TeamTasks.Identity.Infrastructure.csproj"
               }
             }
           }
@@ -1304,41 +1210,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj",
         "projectName": "TeamTasks.Persistence",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               }
             }
           }
@@ -1390,44 +1289,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj",
         "projectName": "TeamTasks.RabbitMq",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.RabbitMq\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.IntegrationEvents\\TeamTasks.Identity.IntegrationEvents.csproj"
               }
             }
           }
@@ -1475,7 +1367,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

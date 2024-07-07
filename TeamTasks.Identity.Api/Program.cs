@@ -70,6 +70,7 @@ builder.Services
     .AddDatabase(builder.Configuration, builder.Environment)
     .AddMetricsOpenTelemetry(builder.Logging)
     .AddSwagger()
+    //TODO .AddBackgroundTasks(builder.Configuration)
     .AddCaching(builder.Configuration)
     .AddLoggingExtension(builder.Configuration);
 

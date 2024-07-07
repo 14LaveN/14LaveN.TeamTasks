@@ -11,3 +11,16 @@ G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\refint\Team
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.pdb
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\ref\TeamTasks.Email.dll
 G:\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.sourcelink.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\bin\Debug\net8.0\TeamTasks.Email.deps.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\bin\Debug\net8.0\TeamTasks.Email.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\bin\Debug\net8.0\TeamTasks.Email.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.csproj.AssemblyReference.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.AssemblyInfoInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.AssemblyInfo.cs
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.csproj.CoreCompileInputs.cache
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.sourcelink.json
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\refint\TeamTasks.Email.dll
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.pdb
+C:\Programming\DotNetProjects\14LaveN.TeamTasks\TeamTasks.Email\obj\Debug\net8.0\ref\TeamTasks.Email.dll

@@ -5,13 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ponom\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\ponom\.nuget\packages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Users\Александр Пономарев\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\2.8.1\build\net6.0\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\2.8.1\build\net6.0\xunit.runner.visualstudio.props')" />
@@ -24,12 +23,12 @@
     <Import Project="$(NuGetPackageRoot)coverlet.msbuild\6.0.2\build\coverlet.msbuild.props" Condition="Exists('$(NuGetPackageRoot)coverlet.msbuild\6.0.2\build\coverlet.msbuild.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\ponom\.nuget\packages\xunit.analyzers\1.14.0</Pkgxunit_analyzers>
-    <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">C:\Users\ponom\.nuget\packages\nunit.analyzers\3.6.1</PkgNUnit_Analyzers>
-    <PkgRoslynator_Formatting_Analyzers Condition=" '$(PkgRoslynator_Formatting_Analyzers)' == '' ">C:\Users\ponom\.nuget\packages\roslynator.formatting.analyzers\4.12.4</PkgRoslynator_Formatting_Analyzers>
-    <PkgRoslynator_CodeFixes Condition=" '$(PkgRoslynator_CodeFixes)' == '' ">C:\Users\ponom\.nuget\packages\roslynator.codefixes\4.12.4</PkgRoslynator_CodeFixes>
-    <PkgRoslynator_CodeAnalysis_Analyzers Condition=" '$(PkgRoslynator_CodeAnalysis_Analyzers)' == '' ">C:\Users\ponom\.nuget\packages\roslynator.codeanalysis.analyzers\4.12.4</PkgRoslynator_CodeAnalysis_Analyzers>
-    <PkgRoslynator_Analyzers Condition=" '$(PkgRoslynator_Analyzers)' == '' ">C:\Users\ponom\.nuget\packages\roslynator.analyzers\4.12.4</PkgRoslynator_Analyzers>
-    <PkgFluentAssertions_Analyzers Condition=" '$(PkgFluentAssertions_Analyzers)' == '' ">C:\Users\ponom\.nuget\packages\fluentassertions.analyzers\0.32.0</PkgFluentAssertions_Analyzers>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\xunit.analyzers\1.14.0</Pkgxunit_analyzers>
+    <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\nunit.analyzers\3.6.1</PkgNUnit_Analyzers>
+    <PkgRoslynator_Formatting_Analyzers Condition=" '$(PkgRoslynator_Formatting_Analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\roslynator.formatting.analyzers\4.12.4</PkgRoslynator_Formatting_Analyzers>
+    <PkgRoslynator_CodeFixes Condition=" '$(PkgRoslynator_CodeFixes)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\roslynator.codefixes\4.12.4</PkgRoslynator_CodeFixes>
+    <PkgRoslynator_CodeAnalysis_Analyzers Condition=" '$(PkgRoslynator_CodeAnalysis_Analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\roslynator.codeanalysis.analyzers\4.12.4</PkgRoslynator_CodeAnalysis_Analyzers>
+    <PkgRoslynator_Analyzers Condition=" '$(PkgRoslynator_Analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\roslynator.analyzers\4.12.4</PkgRoslynator_Analyzers>
+    <PkgFluentAssertions_Analyzers Condition=" '$(PkgFluentAssertions_Analyzers)' == '' ">C:\Users\Александр Пономарев\.nuget\packages\fluentassertions.analyzers\0.32.0</PkgFluentAssertions_Analyzers>
   </PropertyGroup>
 </Project>
