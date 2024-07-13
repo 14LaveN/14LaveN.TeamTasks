@@ -71,7 +71,7 @@ builder.Services
     .AddMetricsOpenTelemetry(builder.Logging)
     .AddSwagger()
     //TODO .AddBackgroundTasks(builder.Configuration)
-    .AddCaching(builder.Configuration)
+    //TODO .AddCaching(builder.Configuration)
     .AddLoggingExtension(builder.Configuration);
 
 builder.Services.AddTransient<LogContextEnrichmentMiddleware>();

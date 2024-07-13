@@ -2,14 +2,17 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using TeamTasks.Application.Core.Abstractions;
 using TeamTasks.Application.Core.Abstractions.Helpers.JWT;
 using TeamTasks.Domain.Entities;
 using TeamTasks.Identity.Application.Core.Settings.User;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Infrastructure.Authentication;
 using TeamTasks.Identity.Infrastructure.Settings.User;
+using TeamTasks.Persistence;
 
 namespace TeamTasks.Identity.Persistence.Extensions;
 
@@ -44,27 +47,47 @@ public static class JwtExtensions
     /// Generate new access token by options.
     /// </summary>
     /// <param name="user">The user.</param>
-    /// <param name="permissionService">The permission provider.</param>
+    /// <param name="dbContext">The database context.</param>
     /// <param name="jwtOptions">The json web token options.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>Returns access token.</returns>
-    public static string GenerateAccessToken(
+    public static async Task<string> GenerateAccessToken(
         this User user,
-        IPermissionProvider permissionService,
-        JwtOptions jwtOptions)
+        IDbContext dbContext,
+        JwtOptions jwtOptions,
+        CancellationToken cancellationToken = default)
     {
-        HashSet<string> permissions = permissionService.Permissions;
+        Role? existingRole = await dbContext
+            .Set<Role>()
+            .Include(x => x.Permissions)
+            .FirstOrDefaultAsync(r => r.Value == Role.Registered.Value, cancellationToken: cancellationToken);
 
-        List<Claim> claims =
-        [
-        ];
+        user.Roles ??= [];
 
-        if (permissions.IsNullOrEmpty()) 
-            claims.AddRange(user.Roles!
-                .First()
-                .Permissions
-                .ToList()
-                .Select(permission =>
-                    new Claim(CustomClaims.Permissions, permission.Name)));
+        if (existingRole != null
+            && user.Roles is not null
+            && !user.Roles.Any(r => r.Value == existingRole.Value))
+        {
+            bool hasAllPermissions = existingRole.Permissions
+                .All(permission =>
+                    user.Roles
+                        .SelectMany(r => r.Permissions)
+                        .Any(p => p.Id == permission.Id));
+
+            if (!hasAllPermissions)
+            {
+                user.Roles.Add(existingRole);
+            }
+        }
+
+        List<Claim> claims = [];
+        
+        claims.AddRange(user.Roles!
+            .First()
+            .Permissions
+            .ToList()
+            .Select(permission =>
+                new Claim(CustomClaims.Permissions, permission.Name)));
 
         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Secret.PadRight(64)));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256Signature);

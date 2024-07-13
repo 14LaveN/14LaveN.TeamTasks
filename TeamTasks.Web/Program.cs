@@ -1,10 +1,38 @@
+using Refit;
 using TeamTasks.Web.Components;
+using TeamTasks.Web.Interfaces.Users;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using TeamTasks.Application.ApiHelpers.Middlewares.DelegatingHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+var refitSettings = new RefitSettings
+{
+    // Настройка обработки ошибок
+    ExceptionFactory = async response =>
+    {
+        if (!response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStringAsync();
+            return new Exception($"API Error: {content}");
+        }
+        return null;
+    }
+};
+
+builder.Services.AddTransient<LoggingHandler>();
+
+//TODO builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(sp.GetRequiredService<IHostEnvironment>().ContentRootPath) });
+builder.Services
+    .AddRefitClient<IUsersClient>(refitSettings)
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://localhost:7135"))
+    .AddHttpMessageHandler<LoggingHandler>();
 
 var app = builder.Build();
 

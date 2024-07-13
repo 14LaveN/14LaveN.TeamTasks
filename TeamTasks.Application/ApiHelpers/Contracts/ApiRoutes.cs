@@ -124,6 +124,6 @@ public static class ApiRoutes
 
         public const string ChangePassword = "users/change-password";
         
-        public const string ChangeName = "change-name";
+        public const string ChangeName = "users/change-name";
     }
 }
