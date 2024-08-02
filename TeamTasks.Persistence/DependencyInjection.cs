@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using TeamTasks.Application.Core.Abstractions;
 using TeamTasks.Application.Core.Abstractions.Idempotency;
@@ -45,6 +46,7 @@ public static class DependencyInjection
             })
                 .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables))
                 .LogTo(Console.WriteLine)
+                .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
                 .EnableServiceProviderCaching()
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors());

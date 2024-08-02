@@ -1,7 +1,9 @@
 using System.Net;
 using System.Security.Authentication;
 using FluentValidation;
+using IdentityServer4;
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -24,6 +26,7 @@ using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.Entities;
+using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Identity.Infrastructure.Settings.User;
 using TeamTasks.Identity.Persistence.Extensions;
@@ -103,7 +106,8 @@ public static class Register
         UserManager<User> userManager,
         SignInManager<User> signInManager,
         IOptions<JwtOptions> jwtOptions,
-        IDbContext dbContext)
+        IDbContext dbContext,
+        IHttpContextAccessor httpContextAccessor)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -130,9 +134,6 @@ public static class Register
                     logger.LogWarning("User with the same name already taken");
                     throw new NotFoundException(nameof(user), "User with the same name");
                 }
-
-                string str = "koxs";
-                var c = str[~1];
                 
                 user = User.Create(firstNameResult.Value, lastNameResult.Value,request.UserName, emailResult.Value, passwordResult.Value);
                 
@@ -141,6 +142,11 @@ public static class Register
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, false);
+                    
+                    await httpContextAccessor
+                        .HttpContext
+                        .SignInAsync(new IdentityServerUser(user.Id.ToString()),
+                        new AuthenticationProperties());
                     
                     logger.LogInformation($"User authorized - {user.UserName} {DateTime.UtcNow}");
                 }

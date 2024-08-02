@@ -22,6 +22,7 @@ internal static class DiLogging
         Ensure.NotNull(services, "Services is required.", nameof(services));
         
         Log.Logger = new LoggerConfiguration()
+            .ReadFrom.Configuration(configuration)
             .WriteTo.Console()
             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(
                 configuration.GetConnectionStringOrThrow("ElasticSearch")!))
@@ -33,6 +34,7 @@ internal static class DiLogging
                 NumberOfReplicas = 1,
                 NumberOfShards = 2
             })
+            .Enrich.FromLogContext()
             .CreateLogger();
         
         return services;

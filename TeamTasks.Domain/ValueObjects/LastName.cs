@@ -38,7 +38,11 @@ public sealed class LastName : ValueObject
             .Ensure(l => !string.IsNullOrWhiteSpace(l), DomainErrors.LastName.NullOrEmpty)
             .Ensure(l => l.Length <= MaxLength, DomainErrors.LastName.LongerThanAllowed)
             .Map(l => new LastName(l));
-        
+    /// <summary>
+    /// Gets or sets user identifier.
+    /// </summary>
+    public Guid UserId { get; set; }
+    
     /// <inheritdoc />
     public override string ToString() => Value;
 

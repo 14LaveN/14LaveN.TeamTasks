@@ -46,12 +46,8 @@ internal static class DiAuthorization
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuers = ["https://localhost:7028", configuration["Jwt:ValidIssuers"]],
-                    ValidAudiences = new List<string>(){"https://localhost:7028", configuration["Jwt:ValidAudiences"]!},
+                    ValidIssuers = [configuration["Jwt:ValidIssuers"]],
+                    ValidAudiences = new List<string>(){"https://localhost:7135", configuration["Jwt:ValidAudiences"]!},
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Secret"]!))
                 };
                 options.Events = new JwtBearerEvents

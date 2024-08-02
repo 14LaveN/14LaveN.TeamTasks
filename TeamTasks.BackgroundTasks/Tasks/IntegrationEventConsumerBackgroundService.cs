@@ -18,6 +18,9 @@ using IConnection = RabbitMQ.Client.IConnection;
 
 namespace TeamTasks.BackgroundTasks.Tasks;
 
+/// <summary>
+/// Represents the integration event consumer background service class.
+/// </summary>
 internal  sealed class IntegrationEventConsumerBackgroundService : IHostedService, IDisposable
 {
     private readonly IServiceProvider _serviceProvider;
@@ -105,8 +108,8 @@ internal  sealed class IntegrationEventConsumerBackgroundService : IHostedServic
         var integrationEventConsumer = scope.ServiceProvider.GetRequiredService<IIntegrationEventConsumer>();
         var rabbitRepository = scope.ServiceProvider.GetRequiredService<IMongoRepository<RabbitMessage>>();
 
-        integrationEventConsumer.Consume(integrationEvent);
-        rabbitRepository.InsertAsync(body);
+        Task.FromResult(integrationEventConsumer.Consume(integrationEvent));
+        Task.FromResult(rabbitRepository.InsertAsync(body));
 
         _channel.BasicAckAsync(eventArgs.DeliveryTag, false).GetAwaiter().GetResult();
     }

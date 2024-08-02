@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Entities;
+using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Identity.Domain.Entities;
 
 namespace TeamTasks.Persistence.Configurations;
@@ -22,14 +23,24 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasMany<Role>()
             .WithMany();
 
-        //TODO builder.HasData( new EmailAddress("dfsdfsdfdsf"),
-        //TODO     new User(FirstName.Login("dfsdf").Value,
-        //TODO     LastName.Login("fdfsdfsf").Value,
-        //TODO     new EmailAddress("dfsdfsdfdsf"),
-        //TODO     "Sdfdsf_2008",
-        //TODO     Guid.Empty));
+        //TODO builder.HasData(new User(
+        //TODO     "sdfsdf",
+        //TODO     FirstName.Create("dfsdf").Value,
+        //TODO     LastName.Create("fdfsdfsf").Value,
+        //TODO     new EmailAddress("dfsdfs@mail.ru")
+        //TODO     {
+        //TODO         UserId  = Guid.NewGuid()
+        //TODO     },
+        //TODO     "Sdfdsf_2008")
+        //TODO {
+        //TODO     Id = Guid.NewGuid()
+        //TODO });
 
         builder.HasKey(user => user.Id);
+
+        builder
+            .Property(u => u.Id)
+            .ValueGeneratedOnAdd();
         
         builder.OwnsOne(user => user.FirstName, firstNameBuilder =>
         {

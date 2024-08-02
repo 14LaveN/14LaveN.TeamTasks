@@ -4,6 +4,7 @@ using TeamTasks.Identity.Domain.Repositories;
 using TeamTasks.Persistence;
 using TeamTasks.Domain.Common.Core.Primitives.Maybe;
 using TeamTasks.Domain.Common.ValueObjects;
+using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Identity.Domain.Entities;
 using TeamTasks.Persistence;
 

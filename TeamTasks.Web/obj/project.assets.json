@@ -1444,6 +1444,16 @@
           "bin/placeholder/TeamTasks.Domain.dll": {}
         }
       },
+      "TeamTasks.Identity.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TeamTasks.Identity.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeamTasks.Identity.Contracts.dll": {}
+        }
+      },
       "TeamTasks.Identity.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3450,6 +3460,11 @@
       "path": "../TeamTasks.Domain/TeamTasks.Domain.csproj",
       "msbuildProject": "../TeamTasks.Domain/TeamTasks.Domain.csproj"
     },
+    "TeamTasks.Identity.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../TeamTasks.Identity.Contracts/TeamTasks.Identity.Contracts.csproj",
+      "msbuildProject": "../TeamTasks.Identity.Contracts/TeamTasks.Identity.Contracts.csproj"
+    },
     "TeamTasks.Identity.Domain/1.0.0": {
       "type": "project",
       "path": "../TeamTasks.Identity.Domain/TeamTasks.Identity.Domain.csproj",
@@ -3461,7 +3476,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.7",
       "Refit >= 7.1.2",
       "Refit.HttpClientFactory >= 7.1.2",
-      "TeamTasks.Application >= 1.0.0"
+      "TeamTasks.Application >= 1.0.0",
+      "TeamTasks.Identity.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3491,6 +3507,9 @@
           "projectReferences": {
             "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
               "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+            },
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj"
             }
           }
         }

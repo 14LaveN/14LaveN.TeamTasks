@@ -1,9 +1,6 @@
 using Refit;
 using TeamTasks.Web.Components;
 using TeamTasks.Web.Interfaces.Users;
-using Microsoft.AspNetCore.Components.Web;
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using TeamTasks.Application.ApiHelpers.Middlewares.DelegatingHandlers;
 
 var builder = WebApplication.CreateBuilder(args);

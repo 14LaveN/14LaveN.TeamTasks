@@ -109,8 +109,6 @@ public static class Login
         {
             try
             {
-                logger.LogInformation($"Request for login an account - {request.UserName}");
-                
                 var user = await userManager.FindByNameAsync(request.UserName);
     
                 if (user is null)

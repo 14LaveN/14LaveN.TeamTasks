@@ -8,6 +8,7 @@ using TeamTasks.Domain.Core.Primitives;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.Core.Utility;
 using TeamTasks.Domain.Entities;
+using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Identity.Domain.Events.User;
 using Permission = TeamTasks.Domain.Enumerations.Permission;
 

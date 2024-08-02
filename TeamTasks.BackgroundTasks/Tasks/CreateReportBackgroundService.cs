@@ -8,7 +8,7 @@ using TeamTasks.BackgroundTasks.Tasks;
 namespace TeamTasks.BackgroundTasks.Tasks;
 
 /// <summary>
-/// Represents the save metrics background service.
+/// Represents the create report background service.
 /// </summary>
 internal sealed class CreateReportBackgroundService : BackgroundService
 {

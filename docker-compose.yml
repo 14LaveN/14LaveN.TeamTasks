@@ -47,6 +47,12 @@
     image: redis:latest
     ports:
       - 6379:6379
+        
+  consul:
+    image: hashicorp/consul:latest
+    container_name: Consul
+    ports:
+      - 8500:8500
   
   db:
     container_name: postgres

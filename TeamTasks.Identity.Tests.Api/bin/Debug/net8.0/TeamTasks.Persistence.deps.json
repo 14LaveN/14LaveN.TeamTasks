@@ -13,8 +13,7 @@
           "Microsoft.TestPlatform.TestHost": "17.6.0",
           "Npgsql": "8.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
-          "TeamTasks.Application": "1.0.0",
-          "Microsoft.AspNetCore": "8.0.0.0"
+          "TeamTasks.Application": "1.0.0"
         },
         "runtime": {
           "TeamTasks.Persistence.dll": {}
@@ -893,14 +892,6 @@
         "runtime": {
           "TeamTasks.Identity.Domain.dll": {}
         }
-      },
-      "Microsoft.AspNetCore/8.0.0.0": {
-        "runtime": {
-          "Microsoft.AspNetCore.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.224.6804"
-          }
-        }
       }
     }
   },
@@ -1424,11 +1415,6 @@
     },
     "TeamTasks.Identity.Domain/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore/8.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

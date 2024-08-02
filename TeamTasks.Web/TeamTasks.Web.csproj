@@ -21,6 +21,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Identity.Contracts\TeamTasks.Identity.Contracts.csproj" />
     </ItemGroup>
 
 </Project>

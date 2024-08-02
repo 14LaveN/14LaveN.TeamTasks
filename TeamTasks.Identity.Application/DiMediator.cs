@@ -37,7 +37,8 @@ public static class DiMediator
             
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>))
                 //TODO .AddOpenBehavior(typeof(IdentityIdempotentCommandPipelineBehavior<,>))
-                .AddOpenBehavior(typeof(UserTransactionBehavior<,>))
+                //TODO .AddOpenBehavior(typeof(UserTransactionBehavior<,>))
+                .AddOpenBehavior(typeof(RequestLoggingPipelineBehavior<,>))
                 .AddOpenBehavior(typeof(ValidationBehaviour<,>))
                 .AddOpenBehavior(typeof(MetricsBehaviour<,>));
             
