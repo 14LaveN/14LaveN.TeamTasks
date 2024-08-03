@@ -22,8 +22,10 @@ using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Common.ValueObjects;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
+using TeamTasks.Domain.Enumerations;
 using TeamTasks.Identity.Contracts.ChangeName;
 using TeamTasks.Identity.Domain.Entities;
+using TeamTasks.Infrastructure.Authentication;
 
 namespace TeamTasks.Identity.Application.Commands;
 
@@ -53,7 +55,7 @@ public static class ChangeName
         /// <inheritdoc />
         public void MapEndpoint(IEndpointRouteBuilder app)
         {
-            app.MapPut(ApiRoutes.Users.ChangeName, async (
+            app.MapPut("api/v{version:apiVersion}/" +ApiRoutes.Users.ChangeName, async (
                     [FromBody] ChangeNameRequest request,
                     [FromHeader(Name = "X-Idempotency-Key")] string requestId,
                     ISender sender) =>
@@ -71,6 +73,7 @@ public static class ChangeName
 
                     return result;
                 })
+                .HasPermission(Permission.UpdateMember.ToString())
                 .Produces(StatusCodes.Status401Unauthorized, typeof(ApiErrorResponse))
                 .Produces(StatusCodes.Status200OK)
                 .RequireRateLimiting("fixed");

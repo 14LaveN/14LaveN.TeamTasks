@@ -1,20 +1,49 @@
 ﻿@page "/counter"
-@rendermode InteractiveServer
+@using TeamTasks.Domain.Core.Primitives.Result
+@using TeamTasks.Identity.Contracts.Register
+@using TeamTasks.Identity.Domain.Entities
+@using TeamTasks.Web.Interfaces.Users
+@inject IUsersClient UsersClient
 
-<PageTitle>Counter</PageTitle>
+<h3>Weather forecast</h3>
 
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@if (result == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (result.IsFailure)
+{
+    <p><em>Error loading data</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Summary</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="3">@result.Value.FullName</td>
+        </tr>
+        </tbody>
+    </table>
+}
 
 @code {
-    private int currentCount = 0;
+    private Result<User>? result;
 
-    private void IncrementCount()
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        resultt = await UsersClient.Register(new RegisterRequest(
+                "djkfgjnhdjfkg",
+                "jhdff",
+                "lox@mail.ru",
+                "Sasha_2008!",
+                "fhjgfds"),
+            "a5b5f05b-0687-48c5-b3db-3b96deb26d4e");
     }
-
 }

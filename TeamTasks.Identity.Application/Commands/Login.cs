@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using TeamTasks.Application.ApiHelpers.Contracts;
 using TeamTasks.Application.ApiHelpers.Policy;
 using TeamTasks.Application.ApiHelpers.Responses;
+using TeamTasks.Application.Core.Abstractions;
 using TeamTasks.Application.Core.Abstractions.Endpoint;
 using TeamTasks.Application.Core.Abstractions.Helpers.JWT;
 using TeamTasks.Application.Core.Abstractions.Idempotency;
@@ -75,6 +76,7 @@ public static class Login
 
                     return result;
                 })
+                .AllowAnonymous()
                 .Produces(StatusCodes.Status401Unauthorized, typeof(ApiErrorResponse))
                 .Produces(StatusCodes.Status200OK)
                 .RequireRateLimiting("fixed");
@@ -87,15 +89,14 @@ public static class Login
     /// <param name="logger">The logger.</param>
     /// <param name="userManager">The user manager.</param>
     /// <param name="jwtOptions">The json web token options.</param>
-    /// <param name="permissionService">The permission provider.</param>
+    /// <param name="dbContext">The database context.</param>
     /// <param name="signInManager">The sign in manager.</param>
     internal sealed class CommandHandler(
             ILogger<CommandHandler> logger,
             UserManager<User> userManager,
             IOptions<JwtOptions> jwtOptions,
             SignInManager<User> signInManager,
-            IPermissionProvider permissionService,
-            BaseDbContext dbContext)
+            IDbContext dbContext)
         : ICommandHandler<Command, LoginResponse<Result<User>>>
     {
         private readonly JwtOptions _jwtOptions = jwtOptions.Value;
@@ -108,8 +109,6 @@ public static class Login
         {
             try
             {
-                logger.LogInformation($"Request for login an account - {request.UserName}");
-                
                 var user = await userManager.FindByNameAsync(request.UserName);
     
                 if (user is null)
@@ -124,32 +123,7 @@ public static class Login
                     throw new AuthenticationException();
                 }
                 
-                Role? existingRole = await dbContext
-                    .Set<Role>()
-                    .Include(x => x.Permissions)
-                    .FirstOrDefaultAsync(r => r.Value == Role.Registered.Value, cancellationToken: cancellationToken);
-
-                user.Roles ??= [];
-                
-                if (existingRole != null
-                    && user.Roles is not null)
-                {
-                    bool hasAllPermissions = existingRole.Permissions
-                        .All(permission => 
-                            user.Roles
-                                .SelectMany(r => r.Permissions)
-                                .Any(p => p.Id == permission.Id));
-
-                    if (!hasAllPermissions)
-                    {
-                        user.Roles.Add(existingRole);
-                    }
-                }
-                
                 //TODO Create the roles in generate access token.
-
-                dbContext.Set<User>().Update(user);
-                await dbContext.SaveChangesAsync(cancellationToken);
                 
                 var result = await _signInManager.PasswordSignInAsync(
                     request.UserName,
@@ -171,7 +145,7 @@ public static class Login
                     Description = "Login account",
                     StatusCode = HttpStatusCode.OK,
                     Data =  Task.FromResult(Result.Create(user, DomainErrors.General.ServerError)),
-                    AccessToken =  user.GenerateAccessToken(permissionService, _jwtOptions), 
+                    AccessToken =  await user.GenerateAccessToken(dbContext, _jwtOptions, cancellationToken), 
                     RefreshToken = refreshToken,
                     RefreshTokenExpireAt = refreshTokenExpireAt
                 };

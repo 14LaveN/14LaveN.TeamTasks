@@ -40,7 +40,7 @@ public static class HasPermissionExtension
                     return;
                 }
 
-                if (permissions.Any(p => p == permission))
+                if (permissions.All(p => p != permission))
                 {
                     await context.Response.WriteAsync(HttpStatusCode.Forbidden.ToString());
                     return;

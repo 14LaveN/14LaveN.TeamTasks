@@ -4,7 +4,7 @@ using TeamTasks.Domain.Common.Core.Primitives;
 using TeamTasks.Domain.Common.Core.Primitives.Result;
 using TeamTasks.Domain.Core.Primitives.Result;
 
-namespace TeamTasks.Domain.Common.ValueObjects;
+namespace TeamTasks.Domain.ValueObjects;
 
 /// <summary>
 /// Represents the emailAddress value object.
@@ -16,7 +16,8 @@ public sealed class EmailAddress : ValueObject
     /// </summary>
     public const int MaxLength = 256;
 
-    private const string EmailRegexPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
+    private const string EmailRegexPattern =
+        @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
 
     private static readonly Lazy<Regex> EmailFormatRegex =
         new(() => new Regex(EmailRegexPattern, RegexOptions.Compiled | RegexOptions.IgnoreCase));
@@ -32,7 +33,8 @@ public sealed class EmailAddress : ValueObject
     /// </summary>
     public string Value { get; }
 
-    public static implicit operator string(EmailAddress emailAddress) => emailAddress.Value;
+    public static implicit operator string(EmailAddress emailAddress) => 
+        emailAddress.Value;
 
     /// <summary>
     /// Creates a new <see cref="EmailAddress"/> instance based on the specified value.
@@ -45,7 +47,7 @@ public sealed class EmailAddress : ValueObject
             .Ensure(e => e.Length <= MaxLength, DomainErrors.Email.LongerThanAllowed)
             .Ensure(e => EmailFormatRegex.Value.IsMatch(e), DomainErrors.Email.InvalidFormat)
             .Map(e => new EmailAddress(e));
-
+    
     /// <inheritdoc />
     protected override IEnumerable<object> GetAtomicValues()
     {

@@ -1,5 +1,6 @@
 using TeamTasks.Domain.Common.Core.Primitives.Maybe;
 using TeamTasks.Domain.Common.ValueObjects;
+using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Identity.Domain.Entities;
 
 namespace TeamTasks.Identity.Domain.Repositories;

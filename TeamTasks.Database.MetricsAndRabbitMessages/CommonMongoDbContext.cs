@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using TeamTasks.Application.Core.Settings;
+using TeamTasks.Database.MetricsAndRabbitMessages.Data;
 using TeamTasks.Domain.Common.Entities;
 using TeamTasks.Domain.Entities;
 
@@ -22,11 +23,12 @@ public sealed class CommonMongoDbContext
     public CommonMongoDbContext(IOptions<MongoSettings> settings)
     {
         var client = new MongoClient(settings.Value.ConnectionString);
-
         _mongoSettings = settings.Value;
         
         if (client is not null)
             _database = client.GetDatabase(settings.Value.Database);
+
+        SeedData.SeedingData(this);
     }
     
     /// <inheritdoc/>

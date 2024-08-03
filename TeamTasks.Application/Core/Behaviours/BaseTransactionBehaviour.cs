@@ -50,8 +50,8 @@ public sealed class BaseTransactionBehavior<TRequest, TResponse>
             {
                 TResponse response = await next();
 
-                await transaction!.CommitAsync(cancellationToken);
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
+                await transaction.CommitAsync(cancellationToken);
 
                 return response;
             }

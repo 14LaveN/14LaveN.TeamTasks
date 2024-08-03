@@ -18,7 +18,6 @@ public sealed class AuthorizationEndToEndTest
     public void HomePage_Should_Display_WelcomeMessage()
     {
         _driver.Navigate().GoToUrl("https://localhost:7135/index.html");
-
         var welcomeMessage = _driver.FindElement(By.TagName("renderedMarkdown"));
 
         welcomeMessage.Should().NotBeNull();

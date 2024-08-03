@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamTasks.Identity.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0aa015b0f9dea25a32a0a36923442cecfa744cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+120806f8bc0fe0ce0682273380ac02a15dff07ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamTasks.Identity.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamTasks.Identity.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

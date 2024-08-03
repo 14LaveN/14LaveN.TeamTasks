@@ -39,6 +39,11 @@ public sealed class FirstName : ValueObject
             .Ensure(f => f.Length <= MaxLength, DomainErrors.FirstName.LongerThanAllowed)
             .Map(f => new FirstName(f));
 
+    /// <summary>
+    /// Gets or sets user identifier.
+    /// </summary>
+    public Guid UserId { get; set; }
+    
     /// <inheritdoc />
     public override string ToString() => Value;
 

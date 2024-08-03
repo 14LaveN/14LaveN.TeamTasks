@@ -45,22 +45,22 @@ public static class IdentityConfiguration
         {
             new()
             {
-                ClientId = "posts-poroject_identity",
+                ClientId = "team-tasks_identity",
                 ClientName = "TeamTasks.Identity.Api",
                 AllowedGrantTypes = GrantTypes.Hybrid,
                 RequireClientSecret = false,
                 RequirePkce = false,
                 RedirectUris =
                 {
-                    "http://localhost:44460/signin-oidc"
+                    "http://localhost:7135"
                 },
                 AllowedCorsOrigins =
                 {
-                    "http://localhost:44460"
+                    "http://localhost:7135"
                 },
                 PostLogoutRedirectUris =
                 {
-                    "http://localhost:44460/signout-callback-oidc"
+                    "http://localhost:7135"
                 },
                 AllowedScopes =
                 {

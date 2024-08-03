@@ -3927,58 +3927,50 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ponom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
+      "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
       "projectName": "TeamTasks.Identity.Application",
-      "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
-      "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-      "outputPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\obj\\",
+      "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\TeamTasks.Identity.Application.csproj",
+      "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Domain\\TeamTasks.Domain.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Contracts\\TeamTasks.Identity.Contracts.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Domain\\TeamTasks.Identity.Domain.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Identity.Persistence\\TeamTasks.Identity.Persistence.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Infrastructure\\TeamTasks.Infrastructure.csproj"
             },
-            "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
-              "projectPath": "G:\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
+            "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj": {
+              "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.TeamTasks\\TeamTasks.Persistence\\TeamTasks.Persistence.csproj"
             }
           }
         }
@@ -4042,31 +4034,11 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'IdentityServer4' 4.1.2 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-55p7-v223-x366",
-      "libraryId": "IdentityServer4",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'IdentityServer4' 4.1.2 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-ff4q-64jc-gx98",
-      "libraryId": "IdentityServer4",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
     {
       "code": "NU1903",
       "level": "Warning",

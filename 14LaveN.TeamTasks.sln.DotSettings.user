@@ -4,13 +4,24 @@
     &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.UnitTest1.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae68df2d_002D4042_002D49e1_002Da1e4_002D869a211bbd93/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae68df2d_002D4042_002D49e1_002Da1e4_002D869a211bbd93/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.e2e.AuthorizationEndToEndTest.HomePage_Should_Display_WelcomeMessage&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.IntegrationsTests.RegisterEndpointIntegrationTest.HomePage_Should_Display_WelcomeMessage&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::14A9656E-E100-43E7-8393-0549D278AFF1::net8.0::TestProject1.UnitTest1.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d45bd5dc_002D7a6a_002D48d7_002D820c_002D73f62fb823a5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.e2e.AuthorizationEndToEndTest.HomePage_Should_Display_WelcomeMessage&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.IntegrationsTests.RegisterEndpointIntegrationTest.HomePage_Should_Display_WelcomeMessage&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::14A9656E-E100-43E7-8393-0549D278AFF1::net8.0::TestProject1.UnitTest1.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3EBAB101-C92C-4A5B-B9F3-44D78466ED6F::net8.0::Products.Api.IntegrationTests.IntegrationsTests.RegisterEndpointIntegrationTest.Create&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3EBAB101-C92C-4A5B-B9F3-44D78466ED6F::net7.0::Products.Api.IntegrationTests.IntegrationsTests.RegisterEndpointIntegrationTest.Create&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=edd5e54f_002D4b8a_002D4a12_002D9017_002Db37164a9082d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::281921A4-22AF-4045-97DF-5B05B815F1B1::net8.0::TeamTasks.Identity.Tests.Api.IntegrationsTests.RegisterEndpointIntegrationTest.ReturnHelloWorld&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

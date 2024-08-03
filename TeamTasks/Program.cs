@@ -11,11 +11,11 @@ builder.Services.AddHealthChecksUI().AddInMemoryStorage();
 
 builder.Services.AddMongoDatabase(builder.Configuration);
 
-builder.Services.AddBackgroundTasks(builder.Configuration);
+//TODO builder.Services.AddBackgroundTasks(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseRouting(); 
+app.UseRouting();
 
 app.UseEndpoints(endpoints =>
 {

@@ -14,6 +14,9 @@ using TeamTasks.Persistence;
 using Prometheus;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.HttpRequestDurations;
+using Serilog;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Consul;
 using TeamTasks.Identity.Application;
 using TeamTasks.Identity.Infrastructure;
 
@@ -71,10 +74,14 @@ builder.Services
     .AddMetricsOpenTelemetry(builder.Logging)
     .AddSwagger()
     //TODO .AddBackgroundTasks(builder.Configuration)
-    .AddCaching(builder.Configuration)
+    //TODO .AddCaching(builder.Configuration)
     .AddLoggingExtension(builder.Configuration);
 
+builder.Host.UseSerilog();
+
 builder.Services.AddTransient<LogContextEnrichmentMiddleware>();
+
+//TODO builder.Services.AddServiceDiscovery(o => o.UseConsul());
 
 builder.Services.AddApplication();
 
@@ -123,6 +130,8 @@ app.UseEndpoints(endpoints =>
 });
 
 app.MapControllers();
+
+app.UseSerilogRequestLogging();
 
 UseCustomMiddlewares();
 

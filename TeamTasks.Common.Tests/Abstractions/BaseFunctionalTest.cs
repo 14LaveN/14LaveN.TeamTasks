@@ -16,7 +16,6 @@ public abstract class BaseFunctionalTest : IDisposable
     protected BaseFunctionalTest()
     {
         Fixture = new Fixture();
-        
         using var webApplicationFactory = new WebApplicationFactory<Program>();
         HttpClient = webApplicationFactory.CreateClient();
     }

@@ -28,9 +28,11 @@
           "OpenTelemetry.Instrumentation.SqlClient": "1.9.0-beta.1",
           "Prometheus.Client.AspNetCore": "5.0.0",
           "Prometheus.Client.HttpRequestDurations": "3.6.0",
+          "Serilog.AspNetCore": "8.0.1",
           "Serilog.Settings.Configuration": "8.0.1",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.Elasticsearch": "10.0.0",
+          "Steeltoe.Discovery.Consul": "3.2.7",
           "TeamTasks.BackgroundTasks": "1.0.0",
           "TeamTasks.Email": "1.0.0",
           "TeamTasks.Identity.Application": "1.0.0",
@@ -1965,6 +1967,53 @@
           }
         }
       },
+      "Serilog.AspNetCore/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Serilog": "4.0.0",
+          "Serilog.Extensions.Hosting": "8.0.0",
+          "Serilog.Extensions.Logging": "8.0.0",
+          "Serilog.Formatting.Compact": "2.0.0",
+          "Serilog.Settings.Configuration": "8.0.1",
+          "Serilog.Sinks.Console": "6.0.0",
+          "Serilog.Sinks.Debug": "2.0.0",
+          "Serilog.Sinks.File": "5.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.AspNetCore.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Hosting/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Serilog": "4.0.0",
+          "Serilog.Extensions.Logging": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Extensions.Hosting.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Logging/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Serilog.Formatting.Compact/2.0.0": {
         "dependencies": {
           "Serilog": "4.0.0"
@@ -2008,6 +2057,17 @@
           "lib/net8.0/Serilog.Sinks.Console.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Debug/2.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -2076,6 +2136,145 @@
           "lib/net6.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.7.27.49176"
+          }
+        }
+      },
+      "Steeltoe.Common/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "Microsoft.Extensions.Configuration.CommandLine": "8.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging.Console": "8.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "Steeltoe.Common.Abstractions": "3.2.7",
+          "System.Diagnostics.DiagnosticSource": "8.0.0",
+          "System.Reflection.MetadataLoadContext": "4.6.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Common.Abstractions/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.Abstractions.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Common.Http/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "3.1.0",
+          "Steeltoe.Common": "3.2.7",
+          "Steeltoe.Discovery.Abstractions": "3.2.7",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.Http.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Common.Net/3.2.7": {
+        "dependencies": {
+          "Steeltoe.Common": "3.2.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.Net.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Connector.Abstractions/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Steeltoe.Common.Abstractions": "3.2.7",
+          "Steeltoe.Extensions.Configuration.Abstractions": "3.2.7"
+        },
+        "runtime": {
+          "lib/net6.0/Steeltoe.Connector.Abstractions.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Connector.ConnectorBase/3.2.7": {
+        "dependencies": {
+          "Steeltoe.Common": "3.2.7",
+          "Steeltoe.Connector.Abstractions": "3.2.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Connector.ConnectorBase.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Discovery.Abstractions/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Steeltoe.Common.Abstractions": "3.2.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Discovery.Abstractions.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Discovery.ClientBase/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Hosting": "8.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "Steeltoe.Common.Http": "3.2.7",
+          "Steeltoe.Connector.ConnectorBase": "3.2.7",
+          "Steeltoe.Discovery.Abstractions": "3.2.7"
+        },
+        "runtime": {
+          "lib/net6.0/Steeltoe.Discovery.ClientBase.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Discovery.Consul/3.2.7": {
+        "dependencies": {
+          "Consul": "1.7.14.3",
+          "Steeltoe.Common.Net": "3.2.7",
+          "Steeltoe.Connector.Abstractions": "3.2.7",
+          "Steeltoe.Discovery.Abstractions": "3.2.7",
+          "Steeltoe.Discovery.ClientBase": "3.2.7",
+          "System.Net.Http.WinHttpHandler": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Discovery.Consul.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
+          }
+        }
+      },
+      "Steeltoe.Extensions.Configuration.Abstractions/3.2.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Steeltoe.Common.Abstractions": "3.2.7"
+        },
+        "runtime": {
+          "lib/net6.0/Steeltoe.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "3.2.7.0",
+            "fileVersion": "3.2.7.0"
           }
         }
       },
@@ -2436,6 +2635,22 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+      "System.Net.Http.WinHttpHandler/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "System.Net.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2507,6 +2722,14 @@
       "System.Reflection.Metadata/6.0.1": {
         "dependencies": {
           "System.Collections.Immutable": "6.0.0"
+        }
+      },
+      "System.Reflection.MetadataLoadContext/4.6.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Reflection.MetadataLoadContext.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.46214"
+          }
         }
       },
       "System.Reflection.Primitives/4.3.0": {
@@ -4206,6 +4429,27 @@
       "path": "serilog/4.0.0",
       "hashPath": "serilog.4.0.0.nupkg.sha512"
     },
+    "Serilog.AspNetCore/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B/X+wAfS7yWLVOTD83B+Ip9yl4MkhioaXj90JSoWi1Ayi8XHepEnsBdrkojg08eodCnmOKmShFUN2GgEc6c0CQ==",
+      "path": "serilog.aspnetcore/8.0.1",
+      "hashPath": "serilog.aspnetcore.8.0.1.nupkg.sha512"
+    },
+    "Serilog.Extensions.Hosting/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-db0OcbWeSCvYQkHWu6n0v40N4kKaTAXNjlM3BKvcbwvNzYphQFcBR+36eQ/7hMMwOkJvAyLC2a9/jNdUL5NjtQ==",
+      "path": "serilog.extensions.hosting/8.0.0",
+      "hashPath": "serilog.extensions.hosting.8.0.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YEAMWu1UnWgf1c1KP85l1SgXGfiVo0Rz6x08pCiPOIBt2Qe18tcZLvdBUuV5o1QHvrs8FAry9wTIhgBRtjIlEg==",
+      "path": "serilog.extensions.logging/8.0.0",
+      "hashPath": "serilog.extensions.logging.8.0.0.nupkg.sha512"
+    },
     "Serilog.Formatting.Compact/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4233,6 +4477,13 @@
       "sha512": "sha512-fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
       "path": "serilog.sinks.console/6.0.0",
       "hashPath": "serilog.sinks.console.6.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.Debug/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y6g3OBJ4JzTyyw16fDqtFcQ41qQAydnEvEqmXjhwhgjsnG/FaJ8GUqF5ldsC/bVkK8KYmqrPhDO+tm4dF6xx4A==",
+      "path": "serilog.sinks.debug/2.0.0",
+      "hashPath": "serilog.sinks.debug.2.0.0.nupkg.sha512"
     },
     "Serilog.Sinks.Elasticsearch/10.0.0": {
       "type": "package",
@@ -4275,6 +4526,76 @@
       "sha512": "sha512-Uqc2OQHglqj9/FfGQ6RkKFkZfHySfZlfmbCl+hc+u2I/IqunfelQ7QJi7ZhvAJxUtu80pildVX6NPLdDaUffOw==",
       "path": "stackexchange.redis/2.7.27",
       "hashPath": "stackexchange.redis.2.7.27.nupkg.sha512"
+    },
+    "Steeltoe.Common/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BFWIpm7dBH63h7f9pViykXh0cgQuarEdDcgV3mSebcGCl/aWL0qA/XlIf7aKcAmsKJWCCz6tRrJfYN1DxRPBaw==",
+      "path": "steeltoe.common/3.2.7",
+      "hashPath": "steeltoe.common.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Common.Abstractions/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c2M5r7E4/cPev65ik+6yVLzGuetu3MKDJUqGDNvO/VfBT8wiwifJj6+grv9gdtikYEdaBBlAfEY2yiLkD2sNZw==",
+      "path": "steeltoe.common.abstractions/3.2.7",
+      "hashPath": "steeltoe.common.abstractions.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Common.Http/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/bnSQhGp67GTwrdloY4Fola/ADCs9oHOMVuKDE16E4MeqBuLB1GWxooWVqP561juu0NYHYAGavSRxY63Qiq/lg==",
+      "path": "steeltoe.common.http/3.2.7",
+      "hashPath": "steeltoe.common.http.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Common.Net/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YFktDDB4WGlC1F2f8KEJ4L2woYmveNVoLTBBCDng2xg98LmzLX3WWEjGCz/8OCjcMXrPu8qgy+vZaOYOuGSZmg==",
+      "path": "steeltoe.common.net/3.2.7",
+      "hashPath": "steeltoe.common.net.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Connector.Abstractions/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zk3k34a7mHf/CMAaHdTcaMfWuaxFZFZMWD4ceGszbKQQNrwUD3iGVxPVuY/nglOYPqt22Mg6ffM6cDRlB6bA7w==",
+      "path": "steeltoe.connector.abstractions/3.2.7",
+      "hashPath": "steeltoe.connector.abstractions.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Connector.ConnectorBase/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/IRhKAaNnIuMO1u+YIG/af9CmsY6i7SQnC2SPQuSUwiNgekPcXyq8jf+Dl+It8DSWSeQrLT7b6bSxfTpMCaZDg==",
+      "path": "steeltoe.connector.connectorbase/3.2.7",
+      "hashPath": "steeltoe.connector.connectorbase.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Discovery.Abstractions/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZMvtinz9bnl6tx8Y5Nt9WldGyXS8lxYRWHkLwDINc4RBw3coJu0fP10veWFyFuw30Rzzg45okrql9sz44iJbfA==",
+      "path": "steeltoe.discovery.abstractions/3.2.7",
+      "hashPath": "steeltoe.discovery.abstractions.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Discovery.ClientBase/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MfFpXCUSXGqpdooM3WVMeW9br7Fs1yJbVecOJ5Qv8uH7u6UOoqo4Yd0kkI/dHfxTGXE4BQvn1U1uBna2IPN1Cg==",
+      "path": "steeltoe.discovery.clientbase/3.2.7",
+      "hashPath": "steeltoe.discovery.clientbase.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Discovery.Consul/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ImTYl4FsQYUU+c3D3Gh2Dp3bTomyB4KqpkUB2L1SqgZcE/7X1IjF5XLlV/yXdgSrW1Kpll1lJDcPrcXChQvuAw==",
+      "path": "steeltoe.discovery.consul/3.2.7",
+      "hashPath": "steeltoe.discovery.consul.3.2.7.nupkg.sha512"
+    },
+    "Steeltoe.Extensions.Configuration.Abstractions/3.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KBr9B8dUE1QJahEYUzYpPGnf+zIV3VWGfcpt8+k8x92nteZ8NOARWkBhqI4dYNqoAgSsDcm5QuTuFJNxDu43pA==",
+      "path": "steeltoe.extensions.configuration.abstractions/3.2.7",
+      "hashPath": "steeltoe.extensions.configuration.abstractions.3.2.7.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/6.6.2": {
       "type": "package",
@@ -4542,6 +4863,13 @@
       "path": "system.net.http/4.3.0",
       "hashPath": "system.net.http.4.3.0.nupkg.sha512"
     },
+    "System.Net.Http.WinHttpHandler/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fEsjB8hXnH2xqGEF9NbN5EWj2JpHyqIw/VYbsrSNU0ri+ZBWLACLS9iKy8amjN5fw6cZRFxIG10j+osmQ1dRpw==",
+      "path": "system.net.http.winhttphandler/4.7.0",
+      "hashPath": "system.net.http.winhttphandler.4.7.0.nupkg.sha512"
+    },
     "System.Net.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4604,6 +4932,13 @@
       "sha512": "sha512-III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g==",
       "path": "system.reflection.metadata/6.0.1",
       "hashPath": "system.reflection.metadata.6.0.1.nupkg.sha512"
+    },
+    "System.Reflection.MetadataLoadContext/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TezS9fEP9kzL5U6GYHZY6I/tqz6qiHKNgAzuT6JJXJXuP+wWvNLN03gPxBK2uLP0LrLg/QXEAF++lxBNBSYILA==",
+      "path": "system.reflection.metadataloadcontext/4.6.0",
+      "hashPath": "system.reflection.metadataloadcontext.4.6.0.nupkg.sha512"
     },
     "System.Reflection.Primitives/4.3.0": {
       "type": "package",

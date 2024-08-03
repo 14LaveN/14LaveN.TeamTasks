@@ -66,4 +66,9 @@
         </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Include="netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.fs" />
+      <Compile Include="netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.vb" />
+    </ItemGroup>
+
 </Project>
